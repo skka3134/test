@@ -1,0 +1,394 @@
+
+# 全局配置
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7894
+routing-mark: 7895
+ipv6: false
+allow-lan: true
+unified-delay: true
+tcp-concurrent: true
+log-level: info
+mode: rule
+# interface-name: eth0  （路由器下根据情况指定出站接口）
+authentication:
+  - name:passwd
+experimental:
+  ignore-resolve-fail: true
+  interface-name: en0
+listeners:
+- name: mixed0
+  port: 50000
+  type: mixed
+
+# 机场订阅，名称不能重复
+proxy-providers:
+  Airport_01:
+    type: http
+    interval: 1800
+    health-check:
+      enable: true
+      url: http://www.google.com/generate_204
+      interval: 300
+    proxy: DIRECT
+    url: "https://mirror.v2gh.com/https://raw.githubusercontent.com/skka3134/test/refs/heads/main/clash.yaml"
+    override:
+      skip-cert-verify: true
+      udp: true
+      down: "50 Mbps"
+      up: "10 Mbps"
+      
+# 用于下载订阅时指定UA
+global-ua: clash.meta
+
+
+geodata-mode: false # mmdb
+# GEO 文件加载模式（standard：标准加载器/memconservative：专为内存受限 (小内存) 设备优化的加载器 (默认值)）
+geodata-loader: standard
+geo-auto-update: true
+geo-update-interval: 48
+geox-url:
+  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.metadb"
+  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+  asn: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
+
+# 控制面板
+external-controller: 0.0.0.0:9097
+secret: ""
+external-ui: ui
+external-ui-url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+# 下载面板地址可更换：https://mirror.ghproxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip
+
+# 匹配进程 always/strict/off
+find-process-mode: off
+global-client-fingerprint: chrome
+keep-alive-idle: 600
+keep-alive-interval: 30
+
+# 策略组选择和fakeip缓存
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+# 流量嗅探
+sniffer:
+  enable: false
+  parse-pure-ip: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  force-domain:
+    - +.v2ex.com
+  skip-domain:
+    - "Mijia Cloud"
+    - "dlg.io.mi.com"
+    - "+.push.apple.com"
+    - "+.apple.com"
+
+# 代理模式
+tun:
+  enable: false
+  stack: mixed
+  device: Mihomo
+  mtu: 9000
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+
+# DNS模块
+# dns:
+#   enable: true
+#   listen: 0.0.0.0:1053
+#   ipv6: false
+#   respect-rules: true
+#   # 模式切换 redir-host / fake-ip
+#   enhanced-mode: fake-ip
+#   fake-ip-range: 28.0.0.1/8
+#   # 模式切换 whitelist/blacklist 
+#   # 黑名单模式表示如果匹配成功则不返回 Fake-IP, 白名单模式时只有匹配成功才返回 Fake-IP
+#   fake-ip-filter-mode: blacklist
+#   fake-ip-filter:
+#     - "+.lan"
+#     - "+.local"
+#     - geosite:private
+#     - geosite:cn
+#   default-nameserver:
+#     - 223.5.5.5
+#     - 119.29.29.29
+#   proxy-server-nameserver:
+#     - 223.5.5.5
+#     - 119.29.29.29
+#   nameserver:
+#     - 223.5.5.5
+#     - 119.29.29.29
+#   nameserver-policy:
+#     "rule-set:private_domain,cn_domain":
+#     - 223.5.5.5
+#     - 119.29.29.29
+#     "rule-set:geolocation-!cn":
+#       - "https://dns.cloudflare.com/dns-query"
+#       - "https://dns.google/dns-query"
+
+dns:
+  cache-algorithm: arc
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - '*.lan'
+  - '*.localdomain'
+  - '*.example'
+  - '*.invalid'
+  - '*.localhost'
+  - '*.test'
+  - '*.local'
+  - '*.home.arpa'
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time-ios.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - '*.time.edu.cn'
+  - '*.ntp.org.cn'
+  - +.pool.ntp.org
+  - time1.cloud.tencent.com
+  - music.163.com
+  - '*.music.163.com'
+  - '*.126.net'
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - '*.kuwo.cn'
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - '*.y.qq.com'
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - '*.xiami.com'
+  - '*.music.migu.cn'
+  - music.migu.cn
+  - +.msftconnecttest.com
+  - +.msftncsi.com
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - localhost.work.weixin.qq.com
+  - +.qq.com
+  - +.tencent.com
+  - +.steamcontent.com
+  - +.srv.nintendo.net
+  - '*.n.n.srv.nintendo.net'
+  - +.cdn.nintendo.net
+  - +.stun.playstation.net
+  - xbox.*.*.microsoft.com
+  - '*.*.xboxlive.com'
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - +.battlenet.com.cn
+  - +.wotgame.cn
+  - +.wggames.cn
+  - +.wowsgame.cn
+  - +.wargaming.net
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - +.stun.*.*
+  - +.stun.*.*.*
+  - +.stun.*.*.*.*
+  - +.stun.*.*.*.*.*
+  - heartbeat.belkin.com
+  - '*.linksys.com'
+  - '*.linksyssmartwifi.com'
+  - '*.router.asus.com'
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - na.b.g-tun.com
+  - +.nflxvideo.net
+  - '*.square-enix.com'
+  - '*.finalfantasyxiv.com'
+  - '*.ffxiv.com'
+  - '*.ff14.sdo.com'
+  - ff.dorado.sdo.com
+  - '*.mcdn.bilivideo.cn'
+  - +.media.dssott.com
+  - shark007.net
+  - +.market.xiaomi.com
+  - +.cmbchina.com
+  - +.cmbimg.com
+  - adguardteam.github.io
+  - adrules.top
+  - anti-ad.net
+  - local.adguard.org
+  - static.adtidy.org
+  - +.sandai.net
+  - +.n0808.com
+  - +.3gppnetwork.org
+  - +.uu.163.com
+  - ps.res.netease.com
+  - +.oray.com
+  - +.orayimg.com
+  fake-ip-range: 198.18.0.1/16
+  fallback: []
+  ipv6: false
+  listen: 0.0.0.0:1053
+  nameserver:
+  - 223.5.5.5
+  - 223.6.6.6
+  use-hosts: false
+  use-system-hosts: false
+hosts:
+  localhost: 127.0.0.1
+  root: 127.0.1.1
+  time.android.com: 203.107.6.88
+  time.facebook.com: 203.107.6.88
+
+
+proxies:
+- name: proxy1
+  password: 8ea20e88-ed11-4ef0-bd49-645979478969
+  port: 50402
+  server: mpkrykuslqfijsw-hk.fliggynode.com
+  skip-cert-verify: true
+  sni: mpkrykuslqfijsw-hk.fliggynode.com
+  type: trojan
+  udp: true
+# 策略组
+proxy-groups:
+  - {name: 🌐 负载均衡(轮询), type: load-balance, include-all: true,icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg,hidden: false,url: https://www.google.com/generate_204,timeout: 3000,max-failed-times: 3,lazy: true,interval: 300,strategy: round-robin}
+rules:
+  - IN-PORT,50000,🌐 负载均衡(轮询)
+  - DOMAIN-SUFFIX,plusaigpt.com,DIRECT
+  - DOMAIN-SUFFIX,plusai.me,DIRECT
+  - RULE-SET,private_domain,DIRECT
+  - RULE-SET,direct1,DIRECT
+  - RULE-SET,cn_domain,DIRECT
+  - RULE-SET,cn_ip,DIRECT
+  - RULE-SET,apple_domain,🌐 负载均衡(轮询)
+  - RULE-SET,proxylite,🌐 负载均衡(轮询)
+  - RULE-SET,ai,🌐 负载均衡(轮询)
+  - RULE-SET,github_domain,🌐 负载均衡(轮询)
+  - RULE-SET,youtube_domain,🌐 负载均衡(轮询)
+  - RULE-SET,google_domain,🌐 负载均衡(轮询)
+  - RULE-SET,onedrive_domain,🌐 负载均衡(轮询)
+  - RULE-SET,microsoft_domain,🌐 负载均衡(轮询)
+  - RULE-SET,tiktok_domain,🌐 负载均衡(轮询)
+  - RULE-SET,telegram_domain,🌐 负载均衡(轮询)
+  - RULE-SET,netflix_domain,🌐 负载均衡(轮询)
+  - RULE-SET,paypal_domain,🌐 负载均衡(轮询)
+  - RULE-SET,geolocation-!cn,🌐 负载均衡(轮询)
+  - RULE-SET,google_ip,🌐 负载均衡(轮询),no-resolve
+  - RULE-SET,netflix_ip,🌐 负载均衡(轮询),no-resolve
+  - RULE-SET,telegram_ip,🌐 负载均衡(轮询),no-resolve
+  - MATCH,🌐 负载均衡(轮询)
+
+# - RULE-SET,applications,DIRECT
+# - RULE-SET,private,DIRECT
+# - RULE-SET,direct,DIRECT
+# - RULE-SET,lancidr,DIRECT,no-resolve
+# - RULE-SET,cncidr,DIRECT,no-resolve
+# - GEOIP,LAN,DIRECT,no-resolve
+# - GEOIP,CN,DIRECT,no-resolve
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+  qcy: &qcy {type: http, interval: 86400, behavior: domain, format: text}
+  class: &class {type: http, interval: 86400, behavior: classical, format: text}
+rule-providers: 
+  private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs" }
+  direct1: { <<: *class, url: "https://raw.githubusercontent.com/qcyhub/rule/master/Direct.list" }
+  proxylite: { <<: *qcy, url: "https://raw.githubusercontent.com/qcyhub/rule/master/ProxyLite.list" }
+  ai: { <<: *qcy, url: "https://raw.githubusercontent.com/qcyhub/rule/master/AI.list" }
+  free: { <<: *qcy, url: "https://raw.githubusercontent.com/qcyhub/rule/master/Free.list" }
+  youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs" }
+  google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs" }
+  github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs" }
+  telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs" }
+  netflix_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs" }
+  paypal_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs" }
+  onedrive_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs" }
+  microsoft_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs" }
+  apple_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs" }
+  speedtest_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.mrs" }
+  tiktok_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs" }
+  gfw_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs" }
+  geolocation-!cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs" }
+  cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs" }
+  
+  cn_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs" }
+  google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs" }
+  telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs" }
+  netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs" }
+
+# rule-providers:
+#   applications:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rulesets/loyalsoldier/applications.yaml
+#     type: http
+#     url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+#   cncidr:
+#     behavior: ipcidr
+#     format: yaml
+#     interval: 86400
+#     path: ./rulesets/loyalsoldier/cncidr.yaml
+#     type: http
+#     url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+#   direct:
+#     behavior: domain
+#     format: yaml
+#     interval: 86400
+#     path: ./rulesets/loyalsoldier/direct.yaml
+#     type: http
+#     url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+#   lancidr:
+#     behavior: ipcidr
+#     format: yaml
+#     interval: 86400
+#     path: ./rulesets/loyalsoldier/lancidr.yaml
+#     type: http
+#     url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+#   private:
+#     behavior: domain
+#     format: yaml
+#     interval: 86400
+#     path: ./rulesets/loyalsoldier/private.yaml
+#     type: http
+#     url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
