@@ -27,7 +27,7 @@ listeners:
 proxy-providers:
   Airport_01:
     type: http
-    interval: 1800
+    interval: 1230
     health-check:
       enable: true
       url: http://www.google.com/generate_204
