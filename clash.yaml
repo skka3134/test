@@ -1,212 +1,7 @@
-allow-lan: true
-authentication:
-- ''
-dns:
-  cache-algorithm: arc
-  enable: true
-  enhanced-mode: fake-ip
-  fake-ip-filter:
-  - '*.lan'
-  - '*.localdomain'
-  - '*.example'
-  - '*.invalid'
-  - '*.localhost'
-  - '*.test'
-  - '*.local'
-  - '*.home.arpa'
-  - time.*.com
-  - time.*.gov
-  - time.*.edu.cn
-  - time.*.apple.com
-  - time-ios.apple.com
-  - time1.*.com
-  - time2.*.com
-  - time3.*.com
-  - time4.*.com
-  - time5.*.com
-  - time6.*.com
-  - time7.*.com
-  - ntp.*.com
-  - ntp1.*.com
-  - ntp2.*.com
-  - ntp3.*.com
-  - ntp4.*.com
-  - ntp5.*.com
-  - ntp6.*.com
-  - ntp7.*.com
-  - '*.time.edu.cn'
-  - '*.ntp.org.cn'
-  - +.pool.ntp.org
-  - time1.cloud.tencent.com
-  - music.163.com
-  - '*.music.163.com'
-  - '*.126.net'
-  - musicapi.taihe.com
-  - music.taihe.com
-  - songsearch.kugou.com
-  - trackercdn.kugou.com
-  - '*.kuwo.cn'
-  - api-jooxtt.sanook.com
-  - api.joox.com
-  - joox.com
-  - y.qq.com
-  - '*.y.qq.com'
-  - streamoc.music.tc.qq.com
-  - mobileoc.music.tc.qq.com
-  - isure.stream.qqmusic.qq.com
-  - dl.stream.qqmusic.qq.com
-  - aqqmusic.tc.qq.com
-  - amobile.music.tc.qq.com
-  - '*.xiami.com'
-  - '*.music.migu.cn'
-  - music.migu.cn
-  - +.msftconnecttest.com
-  - +.msftncsi.com
-  - localhost.ptlogin2.qq.com
-  - localhost.sec.qq.com
-  - localhost.work.weixin.qq.com
-  - +.qq.com
-  - +.tencent.com
-  - +.steamcontent.com
-  - +.srv.nintendo.net
-  - '*.n.n.srv.nintendo.net'
-  - +.cdn.nintendo.net
-  - +.stun.playstation.net
-  - xbox.*.*.microsoft.com
-  - '*.*.xboxlive.com'
-  - xbox.*.microsoft.com
-  - xnotify.xboxlive.com
-  - +.battlenet.com.cn
-  - +.wotgame.cn
-  - +.wggames.cn
-  - +.wowsgame.cn
-  - +.wargaming.net
-  - proxy.golang.org
-  - stun.*.*
-  - stun.*.*.*
-  - +.stun.*.*
-  - +.stun.*.*.*
-  - +.stun.*.*.*.*
-  - +.stun.*.*.*.*.*
-  - heartbeat.belkin.com
-  - '*.linksys.com'
-  - '*.linksyssmartwifi.com'
-  - '*.router.asus.com'
-  - mesu.apple.com
-  - swscan.apple.com
-  - swquery.apple.com
-  - swdownload.apple.com
-  - swcdn.apple.com
-  - swdist.apple.com
-  - lens.l.google.com
-  - stun.l.google.com
-  - na.b.g-tun.com
-  - +.nflxvideo.net
-  - '*.square-enix.com'
-  - '*.finalfantasyxiv.com'
-  - '*.ffxiv.com'
-  - '*.ff14.sdo.com'
-  - ff.dorado.sdo.com
-  - '*.mcdn.bilivideo.cn'
-  - +.media.dssott.com
-  - shark007.net
-  - +.market.xiaomi.com
-  - +.cmbchina.com
-  - +.cmbimg.com
-  - adguardteam.github.io
-  - adrules.top
-  - anti-ad.net
-  - local.adguard.org
-  - static.adtidy.org
-  - +.sandai.net
-  - +.n0808.com
-  - +.3gppnetwork.org
-  - +.uu.163.com
-  - ps.res.netease.com
-  - +.oray.com
-  - +.orayimg.com
-  fake-ip-range: 198.18.0.1/16
-  fallback: []
-  ipv6: false
-  listen: 0.0.0.0:1053
-  nameserver:
-  - 223.5.5.5
-  - 223.6.6.6
-  use-hosts: false
-  use-system-hosts: false
-experimental:
-  ignore-resolve-fail: true
-  interface-name: en0
-external-controller: 0.0.0.0:9097
-external-ui: ui
-find-process-mode: 'off'
-hosts:
-  localhost: 127.0.0.1
-  root: 127.0.1.1
-  time.android.com: 203.107.6.88
-  time.facebook.com: 203.107.6.88
-ipv6: false
-listeners:
-- name: mixed0
-  port: 50000
-  type: mixed
-log-level: info
-mixed-port: 7890
-mode: Rule
-profile:
-  store-selected: true
 proxies:
-- name: proxy1
-  password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50402
-  server: mpkrykuslqfijsw-hk.fliggynode.com
-  skip-cert-verify: true
-  sni: mpkrykuslqfijsw-hk.fliggynode.com
-  type: trojan
-  udp: true
-- name: proxy3
-  password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50409
-  server: mpkrykuslqfijsw-hk.fliggynode.com
-  skip-cert-verify: true
-  sni: mpkrykuslqfijsw-hk.fliggynode.com
-  type: trojan
-  udp: true
-- name: proxy5
-  password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50406
-  server: mpkrykuslqfijsw-hk.fliggynode.com
-  skip-cert-verify: true
-  sni: mpkrykuslqfijsw-hk.fliggynode.com
-  type: trojan
-  udp: true
-- name: proxy9
-  password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50403
-  server: mpkrykuslqfijsw-hk.fliggynode.com
-  skip-cert-verify: true
-  sni: mpkrykuslqfijsw-hk.fliggynode.com
-  type: trojan
-  udp: true
 - name: proxy4
   password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50410
-  server: mpkrykuslqfijsw-hk.fliggynode.com
-  skip-cert-verify: true
-  sni: mpkrykuslqfijsw-hk.fliggynode.com
-  type: trojan
-  udp: true
-- name: proxy7
-  password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50405
-  server: mpkrykuslqfijsw-hk.fliggynode.com
-  skip-cert-verify: true
-  sni: mpkrykuslqfijsw-hk.fliggynode.com
-  type: trojan
-  udp: true
-- name: proxy10
-  password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50401
+  port: 50403
   server: mpkrykuslqfijsw-hk.fliggynode.com
   skip-cert-verify: true
   sni: mpkrykuslqfijsw-hk.fliggynode.com
@@ -222,45 +17,63 @@ proxies:
   udp: true
 - name: proxy2
   password: 8ea20e88-ed11-4ef0-bd49-645979478969
+  port: 50409
+  server: mpkrykuslqfijsw-hk.fliggynode.com
+  skip-cert-verify: true
+  sni: mpkrykuslqfijsw-hk.fliggynode.com
+  type: trojan
+  udp: true
+- name: proxy7
+  password: 8ea20e88-ed11-4ef0-bd49-645979478969
+  port: 50401
+  server: mpkrykuslqfijsw-hk.fliggynode.com
+  skip-cert-verify: true
+  sni: mpkrykuslqfijsw-hk.fliggynode.com
+  type: trojan
+  udp: true
+- name: proxy9
+  password: 8ea20e88-ed11-4ef0-bd49-645979478969
   port: 50407
   server: mpkrykuslqfijsw-hk.fliggynode.com
   skip-cert-verify: true
   sni: mpkrykuslqfijsw-hk.fliggynode.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: proxy11
-  network: ws
-  port: 33416
-  server: yd2.ainivp.com
-  servername: yd2.ainivp.com
+- name: proxy3
+  password: 8ea20e88-ed11-4ef0-bd49-645979478969
+  port: 50406
+  server: mpkrykuslqfijsw-hk.fliggynode.com
   skip-cert-verify: true
-  tls: true
-  type: vmess
+  sni: mpkrykuslqfijsw-hk.fliggynode.com
+  type: trojan
   udp: true
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers: {}
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: proxy12
-  network: ws
-  port: 33416
-  server: cu2.ainivp.com
-  servername: cu2.ainivp.com
+- name: proxy1
+  password: 8ea20e88-ed11-4ef0-bd49-645979478969
+  port: 50402
+  server: mpkrykuslqfijsw-hk.fliggynode.com
   skip-cert-verify: true
-  tls: true
-  type: vmess
+  sni: mpkrykuslqfijsw-hk.fliggynode.com
+  type: trojan
   udp: true
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers: {}
-    path: /ray
+- name: proxy6
+  password: 8ea20e88-ed11-4ef0-bd49-645979478969
+  port: 50405
+  server: mpkrykuslqfijsw-hk.fliggynode.com
+  skip-cert-verify: true
+  sni: mpkrykuslqfijsw-hk.fliggynode.com
+  type: trojan
+  udp: true
+- name: proxy5
+  password: 8ea20e88-ed11-4ef0-bd49-645979478969
+  port: 50410
+  server: mpkrykuslqfijsw-hk.fliggynode.com
+  skip-cert-verify: true
+  sni: mpkrykuslqfijsw-hk.fliggynode.com
+  type: trojan
+  udp: true
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: proxy13
+  name: proxy12
   network: tcp
   port: 19280
   reality-opts:
@@ -273,21 +86,53 @@ proxies:
   type: vless
   udp: true
   uuid: 89b90001-4206-4871-a99d-1744d48f215b
-- name: proxy14
+- alterId: 0
+  cipher: auto
+  name: proxy11
   network: ws
-  password: Trevely
-  port: 13172
-  server: 154.12.179.210
+  port: 33416
+  server: cu2.ainivp.com
+  servername: cu2.ainivp.com
   skip-cert-verify: true
-  sni: trojan.trevely.us.kg
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+  ws-opts:
+    headers: {}
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: proxy10
+  network: ws
+  port: 33416
+  server: yd2.ainivp.com
+  servername: yd2.ainivp.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+  ws-opts:
+    headers: {}
+    path: /ray
+- delay: 1361
+  name: proxy57
+  network: ws
+  port: 47575
+  server: 43.247.134.147
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: trojan.trevely.us.kg
-    path: /?ed=2560
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - client-fingerprint: chrome
-  name: proxy16
+  name: proxy14
   network: ws
   port: 13172
   server: 154.12.179.210
@@ -302,6 +147,19 @@ proxies:
     headers:
       Host: global2.ccdd.site
     path: /?ed=2560
+- name: proxy16
+  network: ws
+  password: Trevely
+  port: 10116
+  server: 125.59.4.73
+  skip-cert-verify: true
+  sni: trojan.trevely.us.kg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.trevely.us.kg
+    path: /?ed=2560
 - name: proxy15
   network: ws
   password: Trevely
@@ -315,62 +173,8 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy18
-  network: ws
-  password: Trevely
-  port: 10116
-  server: 125.59.4.73
-  skip-cert-verify: true
-  sni: trojan.trevely.us.kg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojan.trevely.us.kg
-    path: /?ed=2560
-- delay: 1814
-  name: proxy20
-  network: ws
-  port: 23555
-  server: 112.119.49.206
-  servername: a.ssll.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- alterId: 64
-  cipher: auto
-  name: proxy19
-  port: 42055
-  server: 120.232.153.37
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  delay: 1294
-  name: proxy40
-  network: ws
-  port: 30002
-  server: 83.229.124.185
-  servername: a.ssll.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.ssll.gay
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048fp=chrome
 - delay: 2153
-  name: proxy39
+  name: proxy20
   network: ws
   port: 443
   server: 8.223.39.101
@@ -384,87 +188,120 @@ proxies:
     headers:
       Host: a.ssll.gay
     path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-proxy-groups:
-- hidden: false
-  icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg
-  include-all: true
-  interval: 300
-  lazy: true
-  max-failed-times: 3
-  name: 负载均衡(轮询)
-  strategy: round-robin
-  timeout: 3000
-  type: load-balance
-  url: https://www.google.com/generate_204
-redir-port: 7892
-routing-mark: 7894
-rule-providers:
-  applications:
-    behavior: classical
-    format: yaml
-    interval: 86400
-    path: ./rulesets/loyalsoldier/applications.yaml
-    type: http
-    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
-  cncidr:
-    behavior: ipcidr
-    format: yaml
-    interval: 86400
-    path: ./rulesets/loyalsoldier/cncidr.yaml
-    type: http
-    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
-  direct:
-    behavior: domain
-    format: yaml
-    interval: 86400
-    path: ./rulesets/loyalsoldier/direct.yaml
-    type: http
-    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
-  lancidr:
-    behavior: ipcidr
-    format: yaml
-    interval: 86400
-    path: ./rulesets/loyalsoldier/lancidr.yaml
-    type: http
-    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
-  private:
-    behavior: domain
-    format: yaml
-    interval: 86400
-    path: ./rulesets/loyalsoldier/private.yaml
-    type: http
-    url: https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
-rules:
-- IN-PORT,50000,负载均衡(轮询)
-- DOMAIN-SUFFIX,plusaigpt.com,DIRECT
-- DOMAIN-SUFFIX,plusai.me,DIRECT
-- RULE-SET,applications,DIRECT
-- RULE-SET,private,DIRECT
-- RULE-SET,direct,DIRECT
-- RULE-SET,lancidr,DIRECT,no-resolve
-- RULE-SET,cncidr,DIRECT,no-resolve
-- GEOIP,LAN,DIRECT,no-resolve
-- GEOIP,CN,DIRECT,no-resolve
-- MATCH,负载均衡(轮询)
-secret: null
-sniffer:
-  enable: true
-  parse-pure-ip: true
-  skip-domain:
-  - Mijia Cloud
-  sniff:
-    http:
-      ports:
-      - 80
-      - 8080-8880
-    quic:
-      ports:
-      - 443
-      - 8443
-    tls:
-      ports:
-      - 443
-      - 8443
-tproxy-port: 7893
-tun:
-  enable: false
+- alterId: 64
+  cipher: auto
+  name: proxy18
+  port: 42055
+  server: 120.232.153.37
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- delay: 1151
+  name: proxy56
+  network: ws
+  port: 36669
+  server: 183.178.22.246
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
+- delay: 1814
+  name: proxy17
+  network: ws
+  port: 23555
+  server: 112.119.49.206
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
+- name: proxy13
+  network: ws
+  password: Trevely
+  port: 13172
+  server: 154.12.179.210
+  skip-cert-verify: true
+  sni: trojan.trevely.us.kg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.trevely.us.kg
+    path: /?ed=2560
+- client-fingerprint: chrome
+  delay: 1294
+  name: proxy19
+  network: ws
+  port: 30002
+  server: 83.229.124.185
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2048fp=chrome
+- client-fingerprint: chrome
+  delay: 621
+  name: proxy55
+  network: ws
+  port: 35002
+  server: 58.176.229.127
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai_8 /?ed=2048
+- delay: 2847
+  name: proxy53
+  network: ws
+  port: 443
+  server: 219.76.13.164
+  servername: global2.ccdd.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
+  ws-opts:
+    headers:
+      Host: global2.ccdd.site
+    path: /?ed=2560
+- client-fingerprint: chrome
+  delay: 1460
+  name: proxy54
+  network: ws
+  port: 22732
+  server: 141.11.175.104
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
