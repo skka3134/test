@@ -156,7 +156,7 @@ mode: Rule
 profile:
   store-selected: true
 proxies:
-- name: proxy9
+- name: proxy1
   password: 8ea20e88-ed11-4ef0-bd49-645979478969
   port: 50402
   server: mpkrykuslqfijsw-hk.fliggynode.com
@@ -164,15 +164,7 @@ proxies:
   sni: mpkrykuslqfijsw-hk.fliggynode.com
   type: trojan
   udp: true
-- name: proxy6
-  password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50407
-  server: mpkrykuslqfijsw-hk.fliggynode.com
-  skip-cert-verify: true
-  sni: mpkrykuslqfijsw-hk.fliggynode.com
-  type: trojan
-  udp: true
-- name: proxy4
+- name: proxy3
   password: 8ea20e88-ed11-4ef0-bd49-645979478969
   port: 50409
   server: mpkrykuslqfijsw-hk.fliggynode.com
@@ -182,29 +174,29 @@ proxies:
   udp: true
 - name: proxy5
   password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50410
-  server: mpkrykuslqfijsw-hk.fliggynode.com
-  skip-cert-verify: true
-  sni: mpkrykuslqfijsw-hk.fliggynode.com
-  type: trojan
-  udp: true
-- name: proxy1
-  password: 8ea20e88-ed11-4ef0-bd49-645979478969
   port: 50406
   server: mpkrykuslqfijsw-hk.fliggynode.com
   skip-cert-verify: true
   sni: mpkrykuslqfijsw-hk.fliggynode.com
   type: trojan
   udp: true
-- name: proxy7
+- name: proxy9
   password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50404
+  port: 50403
   server: mpkrykuslqfijsw-hk.fliggynode.com
   skip-cert-verify: true
   sni: mpkrykuslqfijsw-hk.fliggynode.com
   type: trojan
   udp: true
-- name: proxy2
+- name: proxy4
+  password: 8ea20e88-ed11-4ef0-bd49-645979478969
+  port: 50410
+  server: mpkrykuslqfijsw-hk.fliggynode.com
+  skip-cert-verify: true
+  sni: mpkrykuslqfijsw-hk.fliggynode.com
+  type: trojan
+  udp: true
+- name: proxy7
   password: 8ea20e88-ed11-4ef0-bd49-645979478969
   port: 50405
   server: mpkrykuslqfijsw-hk.fliggynode.com
@@ -214,7 +206,7 @@ proxies:
   udp: true
 - name: proxy10
   password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50408
+  port: 50401
   server: mpkrykuslqfijsw-hk.fliggynode.com
   skip-cert-verify: true
   sni: mpkrykuslqfijsw-hk.fliggynode.com
@@ -222,15 +214,15 @@ proxies:
   udp: true
 - name: proxy8
   password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50403
+  port: 50408
   server: mpkrykuslqfijsw-hk.fliggynode.com
   skip-cert-verify: true
   sni: mpkrykuslqfijsw-hk.fliggynode.com
   type: trojan
   udp: true
-- name: proxy3
+- name: proxy2
   password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50401
+  port: 50407
   server: mpkrykuslqfijsw-hk.fliggynode.com
   skip-cert-verify: true
   sni: mpkrykuslqfijsw-hk.fliggynode.com
@@ -238,7 +230,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: proxy14
+  name: proxy11
   network: ws
   port: 33416
   server: yd2.ainivp.com
@@ -253,7 +245,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: proxy15
+  name: proxy12
   network: ws
   port: 33416
   server: cu2.ainivp.com
@@ -268,7 +260,7 @@ proxies:
     path: /ray
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: proxy11
+  name: proxy13
   network: tcp
   port: 19280
   reality-opts:
@@ -281,7 +273,7 @@ proxies:
   type: vless
   udp: true
   uuid: 89b90001-4206-4871-a99d-1744d48f215b
-- name: proxy20
+- name: proxy14
   network: ws
   password: Trevely
   port: 13172
@@ -294,21 +286,8 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
-- name: proxy31
-  network: ws
-  password: Trevely
-  port: 38280
-  server: 38.207.160.222
-  skip-cert-verify: true
-  sni: trojan.trevely.us.kg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojan.trevely.us.kg
-    path: /?ed=2560
 - client-fingerprint: chrome
-  name: proxy22
+  name: proxy16
   network: ws
   port: 13172
   server: 154.12.179.210
@@ -323,22 +302,20 @@ proxies:
     headers:
       Host: global2.ccdd.site
     path: /?ed=2560
-- delay: 596
-  name: proxy30
+- name: proxy15
   network: ws
-  port: 32633
-  server: 223.122.233.66
-  servername: a.ssll.gay
+  password: Trevely
+  port: 38280
+  server: 38.207.160.222
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: trojan.trevely.us.kg
+  type: trojan
   udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: a.ssll.gay
-    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
-- name: proxy33
+      Host: trojan.trevely.us.kg
+    path: /?ed=2560
+- name: proxy18
   network: ws
   password: Trevely
   port: 10116
@@ -351,9 +328,24 @@ proxies:
     headers:
       Host: trojan.trevely.us.kg
     path: /?ed=2560
+- delay: 1814
+  name: proxy20
+  network: ws
+  port: 23555
+  server: 112.119.49.206
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳+@WangCai2+/?ed=2048
 - alterId: 64
   cipher: auto
-  name: proxy35
+  name: proxy19
   port: 42055
   server: 120.232.153.37
   skip-cert-verify: true
@@ -361,11 +353,27 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- delay: 1814
-  name: proxy43
+- client-fingerprint: chrome
+  delay: 1294
+  name: proxy40
   network: ws
-  port: 23555
-  server: 112.119.49.206
+  port: 30002
+  server: 83.229.124.185
+  servername: a.ssll.gay
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: a.ssll.gay
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2048fp=chrome
+- delay: 2153
+  name: proxy39
+  network: ws
+  port: 443
+  server: 8.223.39.101
   servername: a.ssll.gay
   skip-cert-verify: true
   tls: true
