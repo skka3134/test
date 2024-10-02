@@ -11,10 +11,10 @@ allow-lan: true
 unified-delay: true
 tcp-concurrent: true
 log-level: info
-mode: rule
+mode: Rule
 # interface-name: eth0  （路由器下根据情况指定出站接口）
 authentication:
-  - name:passwd
+  - ''
 experimental:
   ignore-resolve-fail: true
   interface-name: en0
@@ -279,16 +279,6 @@ hosts:
   time.android.com: 203.107.6.88
   time.facebook.com: 203.107.6.88
 
-
-proxies:
-- name: proxy1
-  password: 8ea20e88-ed11-4ef0-bd49-645979478969
-  port: 50402
-  server: mpkrykuslqfijsw-hk.fliggynode.com
-  skip-cert-verify: true
-  sni: mpkrykuslqfijsw-hk.fliggynode.com
-  type: trojan
-  udp: true
 # 策略组
 proxy-groups:
   - {name: 🌐 负载均衡(轮询), type: load-balance, include-all: true,icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg,hidden: false,url: https://www.google.com/generate_204,timeout: 3000,max-failed-times: 3,lazy: true,interval: 300,strategy: round-robin}
