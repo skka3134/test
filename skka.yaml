@@ -288,9 +288,8 @@ rules:
   - DOMAIN-SUFFIX,plusai.me,DIRECT
   - RULE-SET,private_domain,DIRECT
   - RULE-SET,direct1,DIRECT
-  - RULE-SET,cn_domain,DIRECT
-  - RULE-SET,cn_ip,DIRECT
   - RULE-SET,apple_domain,🌐 负载均衡(轮询)
+  - RULE-SET,free,🌐 负载均衡(轮询)
   - RULE-SET,proxylite,🌐 负载均衡(轮询)
   - RULE-SET,ai,🌐 负载均衡(轮询)
   - RULE-SET,github_domain,🌐 负载均衡(轮询)
@@ -299,13 +298,16 @@ rules:
   - RULE-SET,onedrive_domain,🌐 负载均衡(轮询)
   - RULE-SET,microsoft_domain,🌐 负载均衡(轮询)
   - RULE-SET,tiktok_domain,🌐 负载均衡(轮询)
+  - RULE-SET,speedtest_domain,🌐 负载均衡(轮询)
   - RULE-SET,telegram_domain,🌐 负载均衡(轮询)
   - RULE-SET,netflix_domain,🌐 负载均衡(轮询)
   - RULE-SET,paypal_domain,🌐 负载均衡(轮询)
   - RULE-SET,geolocation-!cn,🌐 负载均衡(轮询)
+  - RULE-SET,cn_domain,DIRECT
   - RULE-SET,google_ip,🌐 负载均衡(轮询),no-resolve
   - RULE-SET,netflix_ip,🌐 负载均衡(轮询),no-resolve
   - RULE-SET,telegram_ip,🌐 负载均衡(轮询),no-resolve
+  - RULE-SET,cn_ip,DIRECT
   - MATCH,🌐 负载均衡(轮询)
 
 # - RULE-SET,applications,DIRECT
