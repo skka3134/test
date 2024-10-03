@@ -271,7 +271,7 @@ dns:
   nameserver:
   - 223.5.5.5
   - 223.6.6.6
-  use-hosts: false
+  use-hosts: true
   use-system-hosts: false
 hosts:
   localhost: 127.0.0.1
