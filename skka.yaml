@@ -281,36 +281,34 @@ hosts:
 
 # 策略组
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择,🌐 负载均衡(轮询)]}
-  - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300}
   - {name: 🌐 负载均衡(轮询), type: load-balance, include-all: true,icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg,hidden: false,url: http://www.google.com/generate_204,timeout: 3000,max-failed-times: 3,lazy: true,interval: 300,strategy: round-robin}
 rules:
-  - IN-PORT,50000,🚀 节点选择
+  - IN-PORT,50000,🌐 负载均衡(轮询)
   - DOMAIN-SUFFIX,plusaigpt.com,DIRECT
   - DOMAIN-SUFFIX,plusai.me,DIRECT
   - RULE-SET,private_domain,DIRECT
   - RULE-SET,direct1,DIRECT
-  - RULE-SET,apple_domain,🚀 节点选择
-  - RULE-SET,free,🚀 节点选择
-  - RULE-SET,proxylite,🚀 节点选择
-  - RULE-SET,ai,🚀 节点选择
-  - RULE-SET,github_domain,🚀 节点选择
-  - RULE-SET,youtube_domain,🚀 节点选择
-  - RULE-SET,google_domain,🚀 节点选择
-  - RULE-SET,onedrive_domain,🚀 节点选择
-  - RULE-SET,microsoft_domain,🚀 节点选择
-  - RULE-SET,tiktok_domain,🚀 节点选择
-  - RULE-SET,speedtest_domain,🚀 节点选择
-  - RULE-SET,telegram_domain,🚀 节点选择
-  - RULE-SET,netflix_domain,🚀 节点选择
-  - RULE-SET,paypal_domain,🚀 节点选择
-  - RULE-SET,geolocation-!cn,🚀 节点选择
+  - RULE-SET,apple_domain,🌐 负载均衡(轮询)
+  - RULE-SET,free,🌐 负载均衡(轮询)
+  - RULE-SET,proxylite,🌐 负载均衡(轮询)
+  - RULE-SET,ai,🌐 负载均衡(轮询)
+  - RULE-SET,github_domain,🌐 负载均衡(轮询)
+  - RULE-SET,youtube_domain,🌐 负载均衡(轮询)
+  - RULE-SET,google_domain,🌐 负载均衡(轮询)
+  - RULE-SET,onedrive_domain,🌐 负载均衡(轮询)
+  - RULE-SET,microsoft_domain,🌐 负载均衡(轮询)
+  - RULE-SET,tiktok_domain,🌐 负载均衡(轮询)
+  - RULE-SET,speedtest_domain,🌐 负载均衡(轮询)
+  - RULE-SET,telegram_domain,🌐 负载均衡(轮询)
+  - RULE-SET,netflix_domain,🌐 负载均衡(轮询)
+  - RULE-SET,paypal_domain,🌐 负载均衡(轮询)
+  - RULE-SET,geolocation-!cn,🌐 负载均衡(轮询)
   - RULE-SET,cn_domain,DIRECT
-  - RULE-SET,google_ip,🚀 节点选择,no-resolve
-  - RULE-SET,netflix_ip,🚀 节点选择,no-resolve
-  - RULE-SET,telegram_ip,🚀 节点选择,no-resolve
+  - RULE-SET,google_ip,🌐 负载均衡(轮询),no-resolve
+  - RULE-SET,netflix_ip,🌐 负载均衡(轮询),no-resolve
+  - RULE-SET,telegram_ip,🌐 负载均衡(轮询),no-resolve
   - RULE-SET,cn_ip,DIRECT
-  - MATCH,🚀 节点选择
+  - MATCH,🌐 负载均衡(轮询)
 
 # - RULE-SET,applications,DIRECT
 # - RULE-SET,private,DIRECT
