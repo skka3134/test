@@ -281,6 +281,7 @@ hosts:
 
 # 策略组
 proxy-groups:
+  - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300}
   - {name: 🌐 负载均衡(轮询), type: load-balance, include-all: true,icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg,hidden: false,url: http://www.google.com/generate_204,timeout: 3000,max-failed-times: 3,lazy: true,interval: 300,strategy: round-robin}
 rules:
   - IN-PORT,50000,🌐 负载均衡(轮询)
