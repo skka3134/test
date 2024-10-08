@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: proxy2
+  name: proxy1
   network: ws
   port: 13172
   server: 154.12.179.210
@@ -16,7 +16,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 2135
-  name: proxy3
+  name: proxy2
   network: ws
   port: 32633
   server: 223.122.233.66
@@ -31,7 +31,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1891
-  name: proxy4
+  name: proxy3
   network: ws
   port: 23555
   server: 219.77.65.212
@@ -47,7 +47,7 @@ proxies:
     path: /?ed=2560
 - alterId: 64
   cipher: auto
-  name: proxy5
+  name: proxy4
   port: 35601
   server: 120.232.153.40
   skip-cert-verify: true
@@ -56,7 +56,7 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - delay: 2175
-  name: proxy6
+  name: proxy5
   network: ws
   port: 443
   server: 219.76.13.164
@@ -76,7 +76,7 @@ proxies:
   delay: 1985
   h2-opts: {}
   http-opts: {}
-  name: proxy7
+  name: proxy6
   network: tcp
   port: 45020
   server: 183.236.51.23
@@ -86,7 +86,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: proxy8
+  name: proxy7
   port: 42055
   server: 120.232.153.37
   skip-cert-verify: true
@@ -95,7 +95,7 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: proxy9
+  name: proxy8
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20001
   server: hk1.mhw7e2.online
@@ -103,7 +103,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: proxy10
+  name: proxy9
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -115,7 +115,7 @@ proxies:
   type: ssr
   udp: true
 - delay: 2253
-  name: proxy11
+  name: proxy10
   network: ws
   port: 443
   server: 219.76.13.181
@@ -131,7 +131,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: proxy253
+  name: proxy11
   port: 46728
   server: o1sl.qiyunlink.top
   skip-cert-verify: true
@@ -141,7 +141,7 @@ proxies:
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
 - alterId: 0
   cipher: auto
-  name: proxy254
+  name: proxy12
   port: 47756
   server: c2ys.qiyunlink.xyz
   skip-cert-verify: true
@@ -151,7 +151,7 @@ proxies:
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
 - alterId: 0
   cipher: auto
-  name: proxy255
+  name: proxy13
   port: 37156
   server: o1sl.qiyunlink.top
   skip-cert-verify: true
@@ -161,7 +161,7 @@ proxies:
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
 - alterId: 0
   cipher: chacha20-poly1305
-  name: proxy369
+  name: proxy14
   network: ws
   port: 28003
   server: az.globelsta.com
@@ -176,7 +176,7 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: chacha20-poly1305
-  name: proxy370
+  name: proxy15
   network: ws
   port: 28004
   server: jk.globelsta.com
@@ -191,7 +191,7 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: chacha20-poly1305
-  name: proxy371
+  name: proxy16
   network: ws
   port: 28005
   server: ny.globelsta.com
@@ -206,7 +206,7 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: chacha20-poly1305
-  name: proxy372
+  name: proxy17
   network: ws
   port: 28006
   server: t.globelsta.com
@@ -221,7 +221,7 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: chacha20-poly1305
-  name: proxy373
+  name: proxy18
   network: ws
   port: 28001
   server: gda.estyplia.com
@@ -236,7 +236,7 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: chacha20-poly1305
-  name: proxy374
+  name: proxy19
   network: ws
   port: 28002
   server: f.estyplia.com
@@ -249,3 +249,91 @@ proxies:
     headers:
       Host: f.estyplia.com
     path: /adobe
+- name: proxy20
+  password: bca4a421-67bf-48c4-a21a-199365bb16f6
+  port: 35002
+  server: ak2.firewoodzz.com
+  skip-cert-verify: true
+  sni: updates.sub-nthu.com
+  type: trojan
+  udp: true
+- name: proxy21
+  password: bca4a421-67bf-48c4-a21a-199365bb16f6
+  port: 35000
+  server: ak2.firewoodzz.com
+  skip-cert-verify: true
+  sni: updates.sub-nthu.com
+  type: trojan
+  udp: true
+- name: proxy22
+  password: bca4a421-67bf-48c4-a21a-199365bb16f6
+  port: 35001
+  server: ak2.firewoodzz.com
+  skip-cert-verify: true
+  sni: updates.sub-nthu.com
+  type: trojan
+  udp: true
+- name: proxy23
+  password: bca4a421-67bf-48c4-a21a-199365bb16f6
+  port: 35003
+  server: ak2.firewoodzz.com
+  skip-cert-verify: true
+  sni: updates.sub-nthu.com
+  type: trojan
+  udp: true
+- name: proxy24
+  password: bca4a421-67bf-48c4-a21a-199365bb16f6
+  port: 35005
+  server: ak2.firewoodzz.com
+  skip-cert-verify: true
+  sni: updates.sub-nthu.com
+  type: trojan
+  udp: true
+- name: proxy25
+  password: bca4a421-67bf-48c4-a21a-199365bb16f6
+  port: 35008
+  server: ak2.firewoodzz.com
+  skip-cert-verify: true
+  sni: updates.sub-nthu.com
+  type: trojan
+  udp: true
+- name: proxy26
+  password: 299a6171-b4ce-403a-8157-c3dad55ef3a2
+  port: 17728
+  server: 95.164.69.115
+  skip-cert-verify: true
+  sni: gbs.pptv-tv.store
+  type: trojan
+  udp: true
+- name: proxy27
+  password: c95357eb-2869-4511-8940-f0dc5e1ec9b1
+  port: 443
+  server: vn6.5gsieutocdo.com
+  skip-cert-verify: true
+  sni: dl.kgvn.garenanow.com
+  type: trojan
+  udp: true
+- name: proxy28
+  password: b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa
+  port: 443
+  server: hanoi4.speed4g.click
+  skip-cert-verify: true
+  sni: dl.kgvn.garenanow.com
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: proxy29
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.55.21
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: proxy30
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.55.42
+  skip-cert-verify: true
+  type: ss
+  udp: true
