@@ -1,21 +1,6 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: proxy2
-  network: ws
-  port: 33416
-  server: cu2.ainivp.com
-  servername: cu2.ainivp.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers: {}
-    path: /ray
 - client-fingerprint: chrome
-  name: proxy3
+  name: proxy2
   network: ws
   port: 13172
   server: 154.12.179.210
@@ -31,7 +16,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 2135
-  name: proxy5
+  name: proxy3
   network: ws
   port: 32633
   server: 223.122.233.66
@@ -46,7 +31,7 @@ proxies:
       Host: global2.ccdd.site
     path: /?ed=2560
 - delay: 1891
-  name: proxy7
+  name: proxy4
   network: ws
   port: 23555
   server: 219.77.65.212
@@ -62,7 +47,7 @@ proxies:
     path: /?ed=2560
 - alterId: 64
   cipher: auto
-  name: proxy9
+  name: proxy5
   port: 35601
   server: 120.232.153.40
   skip-cert-verify: true
@@ -71,7 +56,7 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - delay: 2175
-  name: proxy8
+  name: proxy6
   network: ws
   port: 443
   server: 219.76.13.164
@@ -91,7 +76,7 @@ proxies:
   delay: 1985
   h2-opts: {}
   http-opts: {}
-  name: proxy12
+  name: proxy7
   network: tcp
   port: 45020
   server: 183.236.51.23
@@ -101,7 +86,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: proxy6
+  name: proxy8
   port: 42055
   server: 120.232.153.37
   skip-cert-verify: true
@@ -110,7 +95,7 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: proxy11
+  name: proxy9
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20001
   server: hk1.mhw7e2.online
@@ -118,7 +103,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: proxy13
+  name: proxy10
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: iFqnzSscN
@@ -130,7 +115,7 @@ proxies:
   type: ssr
   udp: true
 - delay: 2253
-  name: proxy10
+  name: proxy11
   network: ws
   port: 443
   server: 219.76.13.181
@@ -144,11 +129,123 @@ proxies:
     headers:
       Host: global2.ccdd.site
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: proxy4
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
+- alterId: 0
+  cipher: auto
+  name: proxy253
+  port: 46728
+  server: o1sl.qiyunlink.top
   skip-cert-verify: true
-  type: ss
+  tls: false
+  type: vmess
   udp: true
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+- alterId: 0
+  cipher: auto
+  name: proxy254
+  port: 47756
+  server: c2ys.qiyunlink.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+- alterId: 0
+  cipher: auto
+  name: proxy255
+  port: 37156
+  server: o1sl.qiyunlink.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: proxy369
+  network: ws
+  port: 28003
+  server: az.globelsta.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2b651114-b376-31a9-9957-f856a2f272e8
+  ws-opts:
+    headers:
+      Host: az.globelsta.com
+    path: /adobe
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: proxy370
+  network: ws
+  port: 28004
+  server: jk.globelsta.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2b651114-b376-31a9-9957-f856a2f272e8
+  ws-opts:
+    headers:
+      Host: jk.globelsta.com
+    path: /adobe
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: proxy371
+  network: ws
+  port: 28005
+  server: ny.globelsta.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2b651114-b376-31a9-9957-f856a2f272e8
+  ws-opts:
+    headers:
+      Host: ny.globelsta.com
+    path: /adobe
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: proxy372
+  network: ws
+  port: 28006
+  server: t.globelsta.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2b651114-b376-31a9-9957-f856a2f272e8
+  ws-opts:
+    headers:
+      Host: t.globelsta.com
+    path: /adobe
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: proxy373
+  network: ws
+  port: 28001
+  server: gda.estyplia.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2b651114-b376-31a9-9957-f856a2f272e8
+  ws-opts:
+    headers:
+      Host: gda.estyplia.com
+    path: /adobe
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: proxy374
+  network: ws
+  port: 28002
+  server: f.estyplia.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2b651114-b376-31a9-9957-f856a2f272e8
+  ws-opts:
+    headers:
+      Host: f.estyplia.com
+    path: /adobe
