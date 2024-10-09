@@ -6,15 +6,15 @@ redir-port: 7892
 tproxy-port: 7893
 routing-mark: 7894
 port: 7895
+authentication:
+  - ''
 ipv6: false
 allow-lan: true
 unified-delay: true
 tcp-concurrent: true
 log-level: info
-mode: Rule
-# interface-name: eth0  （路由器下根据情况指定出站接口）
-authentication:
-  - ''
+mode: rule
+# mode: Rule
 experimental:
   ignore-resolve-fail: true
   interface-name: en0
@@ -37,8 +37,8 @@ proxy-providers:
     override:
       skip-cert-verify: true
       udp: true
-      down: "50 Mbps"
-      up: "10 Mbps"
+      down: "500 Mbps"
+      up: "100 Mbps"
       
 # 用于下载订阅时指定UA
 global-ua: clash.meta
@@ -56,18 +56,18 @@ geox-url:
   asn: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
 
 # 控制面板
-external-controller: 0.0.0.0:9097
-secret: ""
+external-controller: 0.0.0.0:9090
+secret: 9979
 external-ui: ui
-external-ui-name: metacubexd
 external-ui-url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+external-ui-name: metacubexd
 # 下载面板地址可更换：https://mirror.ghproxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip
 
 # 匹配进程 always/strict/off
 find-process-mode: off
 global-client-fingerprint: chrome
 keep-alive-idle: 600
-keep-alive-interval: 30
+keep-alive-interval: 15
 
 # 策略组选择和fakeip缓存
 profile:
@@ -106,7 +106,9 @@ tun:
   auto-route: true
   auto-redirect: true
   auto-detect-interface: true
-
+  gso: true
+  gso-max-size: 65536
+  endpoint-independent-nat: false
 # DNS模块
 # dns:
 #   enable: true
@@ -274,6 +276,8 @@ dns:
   - 223.6.6.6
   use-hosts: true
   use-system-hosts: false
+  respect-rules: false
+  prefer-h3: false
 hosts:
   localhost: 127.0.0.1
   root: 127.0.1.1
