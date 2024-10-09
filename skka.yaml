@@ -18,10 +18,10 @@ mode: rule
 experimental:
   ignore-resolve-fail: true
   interface-name: en0
-listeners:
-- name: mixed0
-  port: 50000
-  type: mixed
+# listeners:
+# - name: mixed0
+#   port: 50000
+#   type: mixed
 
 # 机场订阅，名称不能重复
 proxy-providers:
