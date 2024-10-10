@@ -110,177 +110,177 @@ tun:
   gso-max-size: 65536
   endpoint-independent-nat: false
 # DNS模块
-dns:
-  enable: true
-  listen: 0.0.0.0:1053
-  ipv6: false
-  respect-rules: true
-  # 模式切换 redir-host / fake-ip
-  enhanced-mode: fake-ip
-  fake-ip-range: 28.0.0.1/8
-  # 模式切换 whitelist/blacklist 
-  # 黑名单模式表示如果匹配成功则不返回 Fake-IP, 白名单模式时只有匹配成功才返回 Fake-IP
-  fake-ip-filter-mode: blacklist
-  fake-ip-filter:
-    - "+.lan"
-    - "+.local"
-    - geosite:private
-    - geosite:cn
-  default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-  proxy-server-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-  nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-  nameserver-policy:
-    "rule-set:private_domain,cn_domain":
-    - 223.5.5.5
-    - 119.29.29.29
-    "rule-set:geolocation-!cn":
-      - "https://dns.cloudflare.com/dns-query"
-      - "https://dns.google/dns-query"
-
 # dns:
-#   cache-algorithm: arc
 #   enable: true
-#   enhanced-mode: fake-ip
-#   fake-ip-filter:
-#   - '*.lan'
-#   - '*.localdomain'
-#   - '*.example'
-#   - '*.invalid'
-#   - '*.localhost'
-#   - '*.test'
-#   - '*.local'
-#   - '*.home.arpa'
-#   - time.*.com
-#   - time.*.gov
-#   - time.*.edu.cn
-#   - time.*.apple.com
-#   - time-ios.apple.com
-#   - time1.*.com
-#   - time2.*.com
-#   - time3.*.com
-#   - time4.*.com
-#   - time5.*.com
-#   - time6.*.com
-#   - time7.*.com
-#   - ntp.*.com
-#   - ntp1.*.com
-#   - ntp2.*.com
-#   - ntp3.*.com
-#   - ntp4.*.com
-#   - ntp5.*.com
-#   - ntp6.*.com
-#   - ntp7.*.com
-#   - '*.time.edu.cn'
-#   - '*.ntp.org.cn'
-#   - +.pool.ntp.org
-#   - time1.cloud.tencent.com
-#   - music.163.com
-#   - '*.music.163.com'
-#   - '*.126.net'
-#   - musicapi.taihe.com
-#   - music.taihe.com
-#   - songsearch.kugou.com
-#   - trackercdn.kugou.com
-#   - '*.kuwo.cn'
-#   - api-jooxtt.sanook.com
-#   - api.joox.com
-#   - joox.com
-#   - y.qq.com
-#   - '*.y.qq.com'
-#   - streamoc.music.tc.qq.com
-#   - mobileoc.music.tc.qq.com
-#   - isure.stream.qqmusic.qq.com
-#   - dl.stream.qqmusic.qq.com
-#   - aqqmusic.tc.qq.com
-#   - amobile.music.tc.qq.com
-#   - '*.xiami.com'
-#   - '*.music.migu.cn'
-#   - music.migu.cn
-#   - +.msftconnecttest.com
-#   - +.msftncsi.com
-#   - localhost.ptlogin2.qq.com
-#   - localhost.sec.qq.com
-#   - localhost.work.weixin.qq.com
-#   - +.qq.com
-#   - +.tencent.com
-#   - +.steamcontent.com
-#   - +.srv.nintendo.net
-#   - '*.n.n.srv.nintendo.net'
-#   - +.cdn.nintendo.net
-#   - +.stun.playstation.net
-#   - xbox.*.*.microsoft.com
-#   - '*.*.xboxlive.com'
-#   - xbox.*.microsoft.com
-#   - xnotify.xboxlive.com
-#   - +.battlenet.com.cn
-#   - +.wotgame.cn
-#   - +.wggames.cn
-#   - +.wowsgame.cn
-#   - +.wargaming.net
-#   - proxy.golang.org
-#   - stun.*.*
-#   - stun.*.*.*
-#   - +.stun.*.*
-#   - +.stun.*.*.*
-#   - +.stun.*.*.*.*
-#   - +.stun.*.*.*.*.*
-#   - heartbeat.belkin.com
-#   - '*.linksys.com'
-#   - '*.linksyssmartwifi.com'
-#   - '*.router.asus.com'
-#   - mesu.apple.com
-#   - swscan.apple.com
-#   - swquery.apple.com
-#   - swdownload.apple.com
-#   - swcdn.apple.com
-#   - swdist.apple.com
-#   - lens.l.google.com
-#   - stun.l.google.com
-#   - na.b.g-tun.com
-#   - +.nflxvideo.net
-#   - '*.square-enix.com'
-#   - '*.finalfantasyxiv.com'
-#   - '*.ffxiv.com'
-#   - '*.ff14.sdo.com'
-#   - ff.dorado.sdo.com
-#   - '*.mcdn.bilivideo.cn'
-#   - +.media.dssott.com
-#   - shark007.net
-#   - +.market.xiaomi.com
-#   - +.cmbchina.com
-#   - +.cmbimg.com
-#   - adguardteam.github.io
-#   - adrules.top
-#   - anti-ad.net
-#   - local.adguard.org
-#   - static.adtidy.org
-#   - +.sandai.net
-#   - +.n0808.com
-#   - +.3gppnetwork.org
-#   - +.uu.163.com
-#   - ps.res.netease.com
-#   - +.oray.com
-#   - +.orayimg.com
-#   fake-ip-range: 198.18.0.1/16
-#   fallback: []
-#   ipv6: false
 #   listen: 0.0.0.0:1053
+#   ipv6: false
+#   respect-rules: true
+#   # 模式切换 redir-host / fake-ip
+#   enhanced-mode: fake-ip
+#   fake-ip-range: 28.0.0.1/8
+#   # 模式切换 whitelist/blacklist 
+#   # 黑名单模式表示如果匹配成功则不返回 Fake-IP, 白名单模式时只有匹配成功才返回 Fake-IP
+#   fake-ip-filter-mode: blacklist
+#   fake-ip-filter:
+#     - "+.lan"
+#     - "+.local"
+#     - geosite:private
+#     - geosite:cn
+#   default-nameserver:
+#     - 223.5.5.5
+#     - 119.29.29.29
+#   proxy-server-nameserver:
+#     - 223.5.5.5
+#     - 119.29.29.29
 #   nameserver:
-#   - 223.5.5.5
-#   - 223.6.6.6
-#   use-hosts: true
-#   use-system-hosts: false
-# hosts:
-#   localhost: 127.0.0.1
-#   root: 127.0.1.1
-#   time.android.com: 203.107.6.88
-#   time.facebook.com: 203.107.6.88
+#     - 223.5.5.5
+#     - 119.29.29.29
+#   nameserver-policy:
+#     "rule-set:private_domain,cn_domain":
+#     - 223.5.5.5
+#     - 119.29.29.29
+#     "rule-set:geolocation-!cn":
+#       - "https://dns.cloudflare.com/dns-query"
+#       - "https://dns.google/dns-query"
+
+dns:
+  cache-algorithm: arc
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - '*.lan'
+  - '*.localdomain'
+  - '*.example'
+  - '*.invalid'
+  - '*.localhost'
+  - '*.test'
+  - '*.local'
+  - '*.home.arpa'
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time-ios.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - '*.time.edu.cn'
+  - '*.ntp.org.cn'
+  - +.pool.ntp.org
+  - time1.cloud.tencent.com
+  - music.163.com
+  - '*.music.163.com'
+  - '*.126.net'
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - '*.kuwo.cn'
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - '*.y.qq.com'
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - '*.xiami.com'
+  - '*.music.migu.cn'
+  - music.migu.cn
+  - +.msftconnecttest.com
+  - +.msftncsi.com
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - localhost.work.weixin.qq.com
+  - +.qq.com
+  - +.tencent.com
+  - +.steamcontent.com
+  - +.srv.nintendo.net
+  - '*.n.n.srv.nintendo.net'
+  - +.cdn.nintendo.net
+  - +.stun.playstation.net
+  - xbox.*.*.microsoft.com
+  - '*.*.xboxlive.com'
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - +.battlenet.com.cn
+  - +.wotgame.cn
+  - +.wggames.cn
+  - +.wowsgame.cn
+  - +.wargaming.net
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - +.stun.*.*
+  - +.stun.*.*.*
+  - +.stun.*.*.*.*
+  - +.stun.*.*.*.*.*
+  - heartbeat.belkin.com
+  - '*.linksys.com'
+  - '*.linksyssmartwifi.com'
+  - '*.router.asus.com'
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - na.b.g-tun.com
+  - +.nflxvideo.net
+  - '*.square-enix.com'
+  - '*.finalfantasyxiv.com'
+  - '*.ffxiv.com'
+  - '*.ff14.sdo.com'
+  - ff.dorado.sdo.com
+  - '*.mcdn.bilivideo.cn'
+  - +.media.dssott.com
+  - shark007.net
+  - +.market.xiaomi.com
+  - +.cmbchina.com
+  - +.cmbimg.com
+  - adguardteam.github.io
+  - adrules.top
+  - anti-ad.net
+  - local.adguard.org
+  - static.adtidy.org
+  - +.sandai.net
+  - +.n0808.com
+  - +.3gppnetwork.org
+  - +.uu.163.com
+  - ps.res.netease.com
+  - +.oray.com
+  - +.orayimg.com
+  fake-ip-range: 198.18.0.1/16
+  fallback: []
+  ipv6: false
+  listen: 0.0.0.0:1053
+  nameserver:
+  - 223.5.5.5
+  - 223.6.6.6
+  use-hosts: true
+  use-system-hosts: false
+hosts:
+  localhost: 127.0.0.1
+  root: 127.0.1.1
+  time.android.com: 203.107.6.88
+  time.facebook.com: 203.107.6.88
 
 
 # 策略组
