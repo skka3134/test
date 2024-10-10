@@ -1,292 +1,81 @@
 proxies:
-- name: proxy20
-  password: bca4a421-67bf-48c4-a21a-199365bb16f6
-  port: 35002
-  server: ak2.firewoodzz.com
-  skip-cert-verify: true
-  sni: updates.sub-nthu.com
-  type: trojan
-  udp: true
-- delay: 514
-  name: proxy1350
-  network: ws
-  port: 443
-  server: 183.240.196.236
-  servername: freenodes.repe.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
-  ws-opts:
-    headers:
-      Host: freenodes.repe.gay
-    path: /?ed=2048
-- delay: 1350
-  name: proxy1354
-  network: ws
-  port: 10311
-  server: 61.92.139.201
-  servername: freenodes.repe.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
-  ws-opts:
-    headers:
-      Host: freenodes.repe.gay
-    path: /?ed=2048
-- delay: 532
-  name: proxy1351
-  network: ws
-  port: 16357
-  server: 46.3.104.36
-  servername: freenodes.repe.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
-  ws-opts:
-    headers:
-      Host: freenodes.repe.gay
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- client-fingerprint: chrome
-  name: proxy1
-  network: ws
-  port: 13172
-  server: 154.12.179.210
-  servername: global2.ccdd.site
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- alterId: 64
-  cipher: auto
-  name: proxy7
-  port: 42055
-  server: 120.232.153.37
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  country: 🇭🇰HK
-  delay: 1083
-  h2-opts: {}
-  http-opts: {}
-  name: proxy1358
-  network: ws
-  port: 5345
-  server: 220.246.57.32
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
-  ws-opts:
-    path: /
-- delay: 1686
-  name: proxy1355
-  network: ws
-  port: 15864
-  server: 38.207.161.206
-  servername: freenodes.repe.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
-  ws-opts:
-    headers:
-      Host: freenodes.repe.gay
-    path: /?ed=2048
-- delay: 1891
-  name: proxy3
-  network: ws
-  port: 23555
-  server: 219.77.65.212
-  servername: global2.ccdd.site
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- delay: 1009
-  name: proxy1353
-  network: ws
-  port: 587
-  server: 103.41.65.161
-  servername: freenodes.repe.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
-  ws-opts:
-    headers:
-      Host: freenodes.repe.gay
-    path: /?ed=2048
-- delay: 837
-  name: proxy1357
-  network: ws
-  port: 443
-  server: 8.223.39.101
-  servername: freenodes.repe.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
-  ws-opts:
-    headers:
-      Host: freenodes.repe.gay
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- delay: 2175
-  name: proxy5
-  network: ws
-  port: 443
-  server: 219.76.13.164
-  servername: global2.ccdd.site
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- delay: 2253
-  name: proxy10
-  network: ws
-  port: 443
-  server: 219.76.13.181
-  servername: global2.ccdd.site
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- alterId: 64
-  cipher: auto
-  name: proxy4
-  port: 35601
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  delay: 475
-  name: proxy1356
-  network: ws
-  port: 8969
-  server: 106.75.178.154
-  servername: freenodes.repe.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
-  ws-opts:
-    headers:
-      Host: freenodes.repe.gay
-    path: /?ed=2048
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳CN
-  delay: 1985
-  h2-opts: {}
-  http-opts: {}
-  name: proxy6
-  network: tcp
-  port: 45020
-  server: 183.236.51.23
-  skip-cert-verify: true
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- delay: 1514
-  name: proxy1404
-  network: ws
-  port: 2083
-  server: 104.19.60.107
-  servername: freenodes.repe.gay
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
-  ws-opts:
-    headers:
-      Host: freenodes.repe.gay
-    path: /?ed=2048
-- delay: 612
-  name: proxy1348
-  network: ws
-  port: 64092
-  server: 183.94.30.213
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
-  ws-opts:
-    headers:
-      Host: freenodes.repe.gay
-    path: /?ed=2048
 - cipher: chacha20-ietf-poly1305
-  name: proxy8
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20001
-  server: hk1.mhw7e2.online
+  name: proxy70
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 30001
+  server: rk1.youtu2.top
   skip-cert-verify: true
   type: ss
   udp: true
-- delay: 435
-  name: proxy1347
-  network: ws
-  port: 53506
-  server: 46.3.104.147
-  servername: freenodes.repe.gay
+- cipher: chacha20-ietf-poly1305
+  name: proxy79
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 34003
+  server: rk3.youtu2.top
   skip-cert-verify: true
-  tls: true
-  type: vless
+  type: ss
   udp: true
-  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
-  ws-opts:
-    headers:
-      Host: freenodes.repe.gay
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2048
-- delay: 982
-  name: proxy1352
-  network: ws
-  port: 444
-  server: 43.155.71.120
-  servername: freenodes.repe.gay
+- cipher: chacha20-ietf-poly1305
+  name: proxy71
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 30002
+  server: rk1.youtu2.top
   skip-cert-verify: true
-  tls: true
-  type: vless
+  type: ss
   udp: true
-  uuid: ca8692b7-8f6f-4346-a916-c1e9798ab91b
-  ws-opts:
-    headers:
-      Host: freenodes.repe.gay
-    path: /?ed=2048
+- cipher: chacha20-ietf-poly1305
+  name: proxy72
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 30003
+  server: rk1.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy82
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 34006
+  server: rk3.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy80
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 34004
+  server: rk3.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy75
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 30006
+  server: rk1.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- name: proxy30
+  password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
+  port: 158
+  server: pop.air.6432.0tk8a3a1q4t94dler.com
+  skip-cert-verify: true
+  sni: pop.air.6432.0tk8a3a1q4t94dler.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy76
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 30007
+  server: rk1.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy74
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 30005
+  server: rk1.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
