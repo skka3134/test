@@ -136,11 +136,11 @@ dns:
   - 223.5.5.5
   - 119.29.29.29
   nameserver-policy:
-    geosite:private,cn,geolocation-cn:
+    geosite:cn_domain:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
     - https://doh.360.cn/dns-query
-    geosite:google,youtube,telegram,gfw,geolocation-!cn:
+    geosite:geolocation-!cn:
     - https://1.1.1.1/dns-query
     - https://1.0.0.1/dns-query
     - https://208.67.222.222/dns-query
