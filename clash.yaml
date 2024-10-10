@@ -1,38 +1,6 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: proxy70
-  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
-  port: 30001
-  server: rk1.youtu2.top
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy79
-  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
-  port: 34003
-  server: rk3.youtu2.top
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy71
-  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
-  port: 30002
-  server: rk1.youtu2.top
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy72
-  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
-  port: 30003
-  server: rk1.youtu2.top
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy82
+  name: proxy5
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 34006
   server: rk3.youtu2.top
@@ -40,42 +8,154 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy80
-  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
-  port: 34004
-  server: rk3.youtu2.top
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy75
+  name: proxy7
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 30006
   server: rk1.youtu2.top
   skip-cert-verify: true
   type: ss
   udp: true
-- name: proxy30
-  password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
-  port: 158
-  server: pop.air.6432.0tk8a3a1q4t94dler.com
+- name: proxy982
+  password: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  port: 45914
+  server: afb999036aa77a5547d3e850620eb1f4.node.tro.node-is.green
   skip-cert-verify: true
-  sni: pop.air.6432.0tk8a3a1q4t94dler.com
+  sni: www.ucloud.cn
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy76
+  name: proxy2
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 34003
+  server: rk3.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: proxy972
+  password: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  port: 25000
+  server: 36.158.206.139
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- name: proxy973
+  password: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  port: 49013
+  server: 6d367a593ce30f2ea2b52107690f5b9b.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: live.douyin.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy3
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 30002
+  server: rk1.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy9
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 30007
   server: rk1.youtu2.top
   skip-cert-verify: true
   type: ss
   udp: true
+- name: proxy979
+  password: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  port: 46843
+  server: 38874f5ef02b33216c17aeb91c7dd861.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: www-s.ucloud.cn
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy74
+  name: proxy4
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 30003
+  server: rk1.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy1
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 30001
+  server: rk1.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy254
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 34005
+  server: rk3.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy251
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 30004
+  server: rk1.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy252
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 34001
+  server: rk3.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy255
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 34007
+  server: rk3.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy253
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 34002
+  server: rk3.youtu2.top
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- name: proxy984
+  password: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  port: 42590
+  server: 6c63daa4875c5c1695d87e8f068eee1a.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: console.ucloud.cn
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy10
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 30005
   server: rk1.youtu2.top
   skip-cert-verify: true
   type: ss
+  udp: true
+- name: proxy986
+  password: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  port: 49139
+  server: 5f9595ab9fe28f1d972b4006bf2fbbc8.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: console.ucloud.cn
+  type: trojan
+  udp: true
+- name: proxy978
+  password: 5f915245-7006-4f95-805e-ec4f9f3d9c60
+  port: 47921
+  server: a806603013533f9450b67e7758d84a6b.node.tro.node-is.green
+  skip-cert-verify: true
+  sni: www-s.ucloud.cn
+  type: trojan
   udp: true
