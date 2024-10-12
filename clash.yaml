@@ -1,6 +1,6 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: proxy23
+  name: proxy1
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 34003
   server: rk3.youtu2.top
@@ -8,7 +8,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy14
+  name: proxy2
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 34006
   server: rk3.youtu2.top
@@ -16,7 +16,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy6
+  name: proxy3
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 34004
   server: rk3.youtu2.top
@@ -32,7 +32,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy17
+  name: proxy5
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 34100
   server: rk3.youtu2.top
@@ -40,7 +40,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy11
+  name: proxy6
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 34002
   server: rk3.youtu2.top
@@ -48,7 +48,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy20
+  name: proxy7
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 34005
   server: rk3.youtu2.top
@@ -56,7 +56,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy16
+  name: proxy8
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 30007
   server: rk1.youtu2.top
@@ -64,7 +64,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy24
+  name: proxy9
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 30004
   server: rk1.youtu2.top
@@ -72,7 +72,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy19
+  name: proxy10
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 30001
   server: rk1.youtu2.top
@@ -80,7 +80,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy1
+  name: proxy11
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 30002
   server: rk1.youtu2.top
@@ -88,7 +88,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy3
+  name: proxy12
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 30006
   server: rk1.youtu2.top
@@ -104,64 +104,16 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: proxy10
+  name: proxy14
   password: 197952b8-aa35-4a43-8212-079fbb8a3a18
   port: 30005
   server: rk1.youtu2.top
   skip-cert-verify: true
   type: ss
   udp: true
-- name: proxy7
-  password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
-  port: 158
-  server: pop.air.6432.0tk8a3a1q4t94dler.com
-  skip-cert-verify: true
-  sni: pop.air.6432.0tk8a3a1q4t94dler.com
-  type: trojan
-  udp: true
-- name: proxy8
-  password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
-  port: 358
-  server: pop.air.6432.0tk8a3a1q4t94dler.com
-  skip-cert-verify: true
-  sni: pop.air.6432.0tk8a3a1q4t94dler.com
-  type: trojan
-  udp: true
-- country: 🇺🇸US
-  delay: 1177
-  fingerprint: randomized
-  name: proxy29
-  network: ws
-  password: DailyConfigs
-  port: 2087
-  server: 172.64.155.209
-  skip-cert-verify: true
-  sni: kanale-daily-configs.blackoutconnection.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: kanale-daily-configs.blackoutconnection.ir
-    path: /@Daily_Configs,@Daily_Configs?ed=2560
-- name: proxy5
-  password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
-  port: 358
-  server: pop.air.1432.0tk8a3a1q4t94dler.com
-  skip-cert-verify: true
-  sni: pop.air.1432.0tk8a3a1q4t94dler.com
-  type: trojan
-  udp: true
-- name: proxy25
-  password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
-  port: 158
-  server: pop.air.1432.0tk8a3a1q4t94dler.com
-  skip-cert-verify: true
-  sni: pop.air.1432.0tk8a3a1q4t94dler.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: proxy30
+  name: proxy20
   port: 46728
   server: o1sl.qiyunlink.top
   skip-cert-verify: true
@@ -171,7 +123,7 @@ proxies:
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
 - alterId: 0
   cipher: auto
-  name: proxy32
+  name: proxy21
   port: 47756
   server: c2ys.qiyunlink.xyz
   skip-cert-verify: true
@@ -179,60 +131,11 @@ proxies:
   type: vmess
   udp: true
   uuid: f2796bde-ba2a-4b2c-acca-872c5eb784d0
-- delay: 2939
-  name: proxy31
-  network: ws
-  port: 23555
-  server: 219.77.65.212
-  servername: global2.ccdd.site
+- cipher: chacha20-ietf-poly1305
+  name: proxy29
+  password: 197952b8-aa35-4a43-8212-079fbb8a3a18
+  port: 34001
+  server: rk3.youtu2.top
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- delay: 2510
-  name: proxy34
-  network: ws
-  port: 23555
-  server: 112.119.49.206
-  servername: global2.ccdd.site
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- delay: 2198
-  name: proxy36
-  network: ws
-  port: 443
-  server: 219.76.13.181
-  servername: global2.ccdd.site
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6
-  ws-opts:
-    headers:
-      Host: global2.ccdd.site
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  country: 🇭🇰 HK
-  delay: 907
-  name: proxy37
-  obfs: tls1.2_ticket_auth
-  password: iFqnzSscN
-  port: 8083
-  protocol: origin
-  server: 150.107.46.21
-  skip-cert-verify: true
-  type: ssr
+  type: ss
   udp: true
