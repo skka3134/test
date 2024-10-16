@@ -281,11 +281,11 @@ dns:
   - 223.6.6.6
   use-hosts: true
   use-system-hosts: false
-hosts:
-  localhost: 127.0.0.1
-  root: 127.0.1.1
-  time.android.com: 203.107.6.88
-  time.facebook.com: 203.107.6.88
+# hosts:
+#   localhost: 127.0.0.1
+#   root: 127.0.1.1
+#   time.android.com: 203.107.6.88
+#   time.facebook.com: 203.107.6.88
 
 
 # 策略组
