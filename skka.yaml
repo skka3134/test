@@ -292,6 +292,7 @@ dns:
 proxy-groups:
   - {name: 🌐 负载均衡(轮询), type: load-balance, include-all: true,icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg,hidden: false,url: http://www.google.com/generate_204,timeout: 3000,max-failed-times: 3,lazy: true,interval: 300,strategy: round-robin}
   - {name: 负载均衡, type: select, include-all: true}
+  - {name: 负载均衡2, type: select}
 rules:
   - DOMAIN-SUFFIX,plusaigpt.com,DIRECT
   - DOMAIN-SUFFIX,plusai.me,DIRECT
