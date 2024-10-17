@@ -1,13 +1,4 @@
 proxies:
-- name: proxy1
-  network: tcp
-  port: 48968
-  server: 35.215.134.135
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: cfbf289d-2e04-4639-a428-cec6e044b490
 - name: proxy2
   network: ws
   port: 443
@@ -39,7 +30,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: proxy312
+  name: proxy5
   obfs: tls1.2_ticket_auth
   obfs-param: 79bb6122836.jd.hk
   password: QevdTE
@@ -50,17 +41,9 @@ proxies:
   skip-cert-verify: true
   type: ssr
   udp: true
-- name: proxy319
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20101
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: proxy447
+  name: proxy7
   network: ws
   port: 12952
   server: z3.fragranceninja.com
@@ -76,25 +59,163 @@ proxies:
     path: /
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: proxy543
+  name: proxy308
   network: tcp
-  port: 443
-  server: 957e32be476a.78ab92.98f0fa.a458.h2.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
-  servername: download.globals-download.com
+  port: 8080
+  reality-opts:
+    public-key: 3x7QUG16ssq3wplofSrfo1fWKX1De5SxWn0kxAjtZWI
+    short-id: c49c6263
+  server: hk1.youxuan.wiki
+  servername: zabbix.mikunet.work
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 2d347be7-909b-4410-af92-95a1abf7e531
-- client-fingerprint: ios
+  uuid: 0eb11578-0638-4daa-8d9d-a114d9ce102c
+- cipher: chacha20-ietf-poly1305
+  name: proxy319
+  password: 54a855a1-86fd-4cc8-8fb7-1ec2a35830c6
+  port: 27259
+  server: gtm1.ktmwan.com
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy320
+  password: 54a855a1-86fd-4cc8-8fb7-1ec2a35830c6
+  port: 27263
+  server: gtm1.ktmwan.com
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- name: proxy332
+  password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
+  port: 158
+  server: pop.air.1432.0tk8a3a1q4t94dler.com
+  skip-cert-verify: true
+  sni: pop.air.1432.0tk8a3a1q4t94dler.com
+  type: trojan
+  udp: true
+- name: proxy333
+  password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
+  port: 158
+  server: pop.air.6432.0tk8a3a1q4t94dler.com
+  skip-cert-verify: true
+  sni: pop.air.6432.0tk8a3a1q4t94dler.com
+  type: trojan
+  udp: true
+- name: proxy336
+  password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
+  port: 358
+  server: pop.air.6432.0tk8a3a1q4t94dler.com
+  skip-cert-verify: true
+  sni: pop.air.6432.0tk8a3a1q4t94dler.com
+  type: trojan
+  udp: true
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: proxy544
+  name: proxy893
   network: tcp
-  port: 443
-  server: 957e32be476a.78ab92.98f0fa.a458.h3.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
-  servername: download.globals-download.com
+  port: 60001
+  reality-opts:
+    public-key: LVXw73bcaqKboDgomh3ixoAcYeymAGet_SNykiidcDI
+    short-id: 3862063f
+  server: hk1.helloco.xyz
+  servername: python.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 2d347be7-909b-4410-af92-95a1abf7e531
+  uuid: b0cade16-bd31-455e-96dd-7ddb7eb517d8
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: proxy894
+  network: tcp
+  port: 60001
+  reality-opts:
+    public-key: 5ERdRiYFr5C_HwM-EnmAo5mhwHV2n6LKSPhpHkskLEs
+    short-id: 97c58d95
+  server: hk2.helloco.xyz
+  servername: python.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b0cade16-bd31-455e-96dd-7ddb7eb517d8
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: proxy895
+  network: tcp
+  port: 60001
+  reality-opts:
+    public-key: b47Ph8cypolrFusLDSujR_ryFlkRl0NrwmAfsY2bCAA
+    short-id: cf5edb4b
+  server: hk3.helloco.xyz
+  servername: python.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b0cade16-bd31-455e-96dd-7ddb7eb517d8
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: proxy896
+  network: tcp
+  port: 60001
+  reality-opts:
+    public-key: gE2d3674g2dZfjriukxAC7YGmnVkGdqY9lCtuqrTwzk
+    short-id: d177d711
+  server: hk4.helloco.xyz
+  servername: python.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b0cade16-bd31-455e-96dd-7ddb7eb517d8
+- name: proxy1171
+  network: ws
+  password: Trevely
+  port: 587
+  server: 20.255.52.179
+  skip-cert-verify: true
+  sni: trojans.trevely.us.kg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojans.trevely.us.kg
+    path: /?ed=2560
+- name: proxy1172
+  network: ws
+  password: Trevely
+  port: 32123
+  server: 38.207.179.165
+  skip-cert-verify: true
+  sni: trojans.trevely.us.kg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojans.trevely.us.kg
+    path: /?ed=2560
+- name: proxy1174
+  network: ws
+  password: Trevely
+  port: 47617
+  server: 103.74.192.150
+  skip-cert-verify: true
+  sni: trojans.trevely.us.kg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojans.trevely.us.kg
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: proxy1312
+  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
+  port: 34676
+  server: tg_mfbpn03.52cloud.us.kg
+  skip-cert-verify: true
+  type: ss
+  udp: true
