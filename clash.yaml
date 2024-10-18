@@ -1,27 +1,13 @@
 proxies:
-- name: proxy2
-  network: ws
-  port: 443
-  server: hk.wzzoo.me
-  servername: hk.wzzoo.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: bf7aa127-2300-45d8-8197-de411397cc50
-  ws-opts:
-    headers:
-      Host: hk.wzzoo.me
-    path: /bing
 - cipher: chacha20-ietf-poly1305
-  name: proxy3
+  name: proxy2
   password: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
   port: 54592
   server: hkzz.lbxjc.online
   skip-cert-verify: true
   type: ss
   udp: true
-- name: proxy4
+- name: proxy3
   password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
   port: 358
   server: pop.air.1432.0tk8a3a1q4t94dler.com
@@ -29,37 +15,9 @@ proxies:
   sni: pop.air.1432.0tk8a3a1q4t94dler.com
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: proxy5
-  obfs: tls1.2_ticket_auth
-  obfs-param: 79bb6122836.jd.hk
-  password: QevdTE
-  port: 20003
-  protocol: auth_aes128_md5
-  protocol-param: 122836:7rs20S
-  server: 120.199.90.65
-  skip-cert-verify: true
-  type: ssr
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: proxy7
-  network: ws
-  port: 12952
-  server: z3.fragranceninja.com
-  servername: z3.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: z3.fragranceninja.com
-    path: /
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: proxy308
+  name: proxy6
   network: tcp
   port: 8080
   reality-opts:
@@ -72,23 +30,7 @@ proxies:
   type: vless
   udp: true
   uuid: 0eb11578-0638-4daa-8d9d-a114d9ce102c
-- cipher: chacha20-ietf-poly1305
-  name: proxy319
-  password: 54a855a1-86fd-4cc8-8fb7-1ec2a35830c6
-  port: 27259
-  server: gtm1.ktmwan.com
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy320
-  password: 54a855a1-86fd-4cc8-8fb7-1ec2a35830c6
-  port: 27263
-  server: gtm1.ktmwan.com
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- name: proxy332
+- name: proxy9
   password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
   port: 158
   server: pop.air.1432.0tk8a3a1q4t94dler.com
@@ -96,7 +38,7 @@ proxies:
   sni: pop.air.1432.0tk8a3a1q4t94dler.com
   type: trojan
   udp: true
-- name: proxy333
+- name: proxy10
   password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
   port: 158
   server: pop.air.6432.0tk8a3a1q4t94dler.com
@@ -104,7 +46,7 @@ proxies:
   sni: pop.air.6432.0tk8a3a1q4t94dler.com
   type: trojan
   udp: true
-- name: proxy336
+- name: proxy11
   password: 3998ff7e2a7db2ebabaf0605e6f1d63c145227.wns.windows.com
   port: 358
   server: pop.air.6432.0tk8a3a1q4t94dler.com
@@ -114,7 +56,7 @@ proxies:
   udp: true
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: proxy893
+  name: proxy12
   network: tcp
   port: 60001
   reality-opts:
@@ -129,7 +71,7 @@ proxies:
   uuid: b0cade16-bd31-455e-96dd-7ddb7eb517d8
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: proxy894
+  name: proxy13
   network: tcp
   port: 60001
   reality-opts:
@@ -144,7 +86,7 @@ proxies:
   uuid: b0cade16-bd31-455e-96dd-7ddb7eb517d8
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: proxy895
+  name: proxy14
   network: tcp
   port: 60001
   reality-opts:
@@ -159,7 +101,7 @@ proxies:
   uuid: b0cade16-bd31-455e-96dd-7ddb7eb517d8
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: proxy896
+  name: proxy15
   network: tcp
   port: 60001
   reality-opts:
@@ -172,20 +114,7 @@ proxies:
   type: vless
   udp: true
   uuid: b0cade16-bd31-455e-96dd-7ddb7eb517d8
-- name: proxy1171
-  network: ws
-  password: Trevely
-  port: 587
-  server: 20.255.52.179
-  skip-cert-verify: true
-  sni: trojans.trevely.us.kg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojans.trevely.us.kg
-    path: /?ed=2560
-- name: proxy1172
+- name: proxy17
   network: ws
   password: Trevely
   port: 32123
@@ -198,11 +127,174 @@ proxies:
     headers:
       Host: trojans.trevely.us.kg
     path: /?ed=2560
-- name: proxy1174
+- cipher: chacha20-ietf
+  name: proxy81
+  obfs: plain
+  obfs-param: 64b07298544.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5952
+  protocol: auth_aes128_sha1
+  protocol-param: 298544:TrdQqK
+  server: yd-01.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: proxy82
+  obfs: plain
+  obfs-param: 64b07298544.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5953
+  protocol: auth_aes128_sha1
+  protocol-param: 298544:TrdQqK
+  server: yd-06.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: proxy83
+  obfs: plain
+  obfs-param: 64b07298544.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5954
+  protocol: auth_aes128_sha1
+  protocol-param: 298544:TrdQqK
+  server: yd-06.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: proxy88
+  obfs: plain
+  obfs-param: 64b07298544.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5959
+  protocol: auth_aes128_sha1
+  protocol-param: 298544:TrdQqK
+  server: yd-07.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: proxy106
+  obfs: plain
+  obfs-param: 64b07298544.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5951
+  protocol: auth_aes128_sha1
+  protocol-param: 298544:TrdQqK
+  server: yd-04.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: proxy108
+  obfs: plain
+  obfs-param: 64b07298544.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5953
+  protocol: auth_aes128_sha1
+  protocol-param: 298544:TrdQqK
+  server: yd-04.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: proxy110
+  obfs: plain
+  obfs-param: 64b07298544.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5955
+  protocol: auth_aes128_sha1
+  protocol-param: 298544:TrdQqK
+  server: yd-04.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: proxy111
+  obfs: plain
+  obfs-param: 64b07298544.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5956
+  protocol: auth_aes128_sha1
+  protocol-param: 298544:TrdQqK
+  server: yd-04.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: proxy113
+  obfs: plain
+  obfs-param: 64b07298544.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5958
+  protocol: auth_aes128_sha1
+  protocol-param: 298544:TrdQqK
+  server: yd-04.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf
+  name: proxy114
+  obfs: plain
+  obfs-param: 64b07298544.microsoft.com
+  password: bxsnucrgk6hfish
+  port: 5959
+  protocol: auth_aes128_sha1
+  protocol-param: 298544:TrdQqK
+  server: yd-04.paofunlink.com
+  skip-cert-verify: true
+  type: ssr
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy260
+  password: 2400d119-312a-4f78-b247-8e4d623813fd
+  port: 34338
+  server: gy.666666222.shop
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- auth: e0000565-c8b5-445a-b404-4a1b43d63a29
+  name: proxy280
+  password: e0000565-c8b5-445a-b404-4a1b43d63a29
+  port: 41114
+  server: bgp.xn--jbyq16e.xyz
+  skip-cert-verify: true
+  sni: bgp.xn--jbyq16e.xyz
+  type: hysteria2
+  udp: true
+- auth: 2a426382-c9ce-4356-ac60-e53164d3aea0
+  name: proxy289
+  password: 2a426382-c9ce-4356-ac60-e53164d3aea0
+  port: 31113
+  server: bgp.abyssvpn.com
+  skip-cert-verify: true
+  sni: bgp.abyssvpn.com
+  type: hysteria2
+  udp: true
+- auth: 57d0569b-3076-4eb0-a494-436d64fa8995
+  name: proxy310
+  password: 57d0569b-3076-4eb0-a494-436d64fa8995
+  port: 41113
+  server: bgp.xn--jbyq16e.xyz
+  skip-cert-verify: true
+  sni: bgp.xn--jbyq16e.xyz
+  type: hysteria2
+  udp: true
+- name: proxy1535
+  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
+  port: 20101
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- name: proxy1571
   network: ws
   password: Trevely
-  port: 47617
-  server: 103.74.192.150
+  port: 30479
+  server: 38.207.132.90
   skip-cert-verify: true
   sni: trojans.trevely.us.kg
   type: trojan
@@ -211,11 +303,27 @@ proxies:
     headers:
       Host: trojans.trevely.us.kg
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: proxy1312
-  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
-  port: 34676
-  server: tg_mfbpn03.52cloud.us.kg
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: proxy2025
+  network: tcp
+  port: 443
+  server: 957e32be476a.78ab92.98f0fa.a458.h2.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
+  servername: download.globals-download.com
   skip-cert-verify: true
-  type: ss
+  tls: true
+  type: vless
   udp: true
+  uuid: 2d347be7-909b-4410-af92-95a1abf7e531
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: proxy2026
+  network: tcp
+  port: 443
+  server: 957e32be476a.78ab92.98f0fa.a458.h3.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
+  servername: download.globals-download.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d347be7-909b-4410-af92-95a1abf7e531
