@@ -1,15 +1,7 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: proxy1
-  password: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  port: 54592
-  server: hkzz.lbxjc.online
-  skip-cert-verify: true
-  type: ss
-  udp: true
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: proxy6
+  name: proxy2
   network: tcp
   port: 443
   server: 957e32be476a.78ab92.98f0fa.a458.h2.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
@@ -21,7 +13,7 @@ proxies:
   uuid: 2d347be7-909b-4410-af92-95a1abf7e531
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: proxy7
+  name: proxy3
   network: tcp
   port: 443
   server: 957e32be476a.78ab92.98f0fa.a458.h3.108f4143-d0af-4e42-85a0-b13448ab5917.138503301e7d.yydjc.top
@@ -33,7 +25,7 @@ proxies:
   uuid: 2d347be7-909b-4410-af92-95a1abf7e531
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: proxy8
+  name: proxy4
   network: tcp
   port: 443
   server: pq.hkt1.yydjc.top
@@ -43,7 +35,7 @@ proxies:
   type: vless
   udp: true
   uuid: 2d347be7-909b-4410-af92-95a1abf7e531
-- name: proxy10
+- name: proxy5
   password: 5a6e828c-3878-4f59-b4d5-36538e37cbdc
   port: 34421
   server: hk1.tjsd.site
@@ -52,7 +44,7 @@ proxies:
   tfo: false
   type: hysteria2
   udp: true
-- name: proxy11
+- name: proxy6
   password: 5a6e828c-3878-4f59-b4d5-36538e37cbdc
   port: 34422
   server: hk1.tjsd.site
@@ -61,7 +53,7 @@ proxies:
   tfo: false
   type: hysteria2
   udp: true
-- name: proxy12
+- name: proxy7
   password: 5a6e828c-3878-4f59-b4d5-36538e37cbdc
   port: 34424
   server: hk1.tjsd.site
@@ -70,7 +62,7 @@ proxies:
   tfo: false
   type: hysteria2
   udp: true
-- name: proxy13
+- name: proxy8
   password: 5a6e828c-3878-4f59-b4d5-36538e37cbdc
   port: 34425
   server: hk1.tjsd.site
@@ -79,16 +71,7 @@ proxies:
   tfo: false
   type: hysteria2
   udp: true
-- name: proxy14
-  password: 5a6e828c-3878-4f59-b4d5-36538e37cbdc
-  port: 34426
-  server: hk1.tjsd.site
-  skip-cert-verify: true
-  sni: hk1.tjsd.site
-  tfo: false
-  type: hysteria2
-  udp: true
-- name: proxy15
+- name: proxy10
   password: 5a6e828c-3878-4f59-b4d5-36538e37cbdc
   port: 34430
   server: hk1.tjsd.site
@@ -97,24 +80,9 @@ proxies:
   tfo: false
   type: hysteria2
   udp: true
-- delay: 1395
-  name: proxy448
-  network: ws
-  port: 443
-  server: 162.159.152.7
-  servername: ar.ylks.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-  ws-opts:
-    headers:
-      Host: ar.ylks.xyz
-    path: /freecodes
 - alterId: 0
   delay: 1882
-  name: proxy449
+  name: proxy12
   password: '3690911436885991424'
   port: 443
   server: giving-marmoset.opossum872.cfd
@@ -122,35 +90,26 @@ proxies:
   sni: giving-marmoset.opossum872.cfd
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  delay: 1786
-  flow: xtls-rprx-vision
-  name: proxy450
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: 3x7QUG16ssq3wplofSrfo1fWKX1De5SxWn0kxAjtZWI
-    short-id: c49c6263
-  server: hk1.youxuan.wiki
-  servername: zabbix.mikunet.work
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 15fb60ad-4acc-40f0-bf4f-8fec451489f5
 - cipher: chacha20-ietf-poly1305
-  name: proxy638
-  password: 54f4e2f4-f0e1-4a15-a0cf-3a3234ab58fb
-  port: 11001
-  server: 183.232.229.165
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: proxy653
+  name: proxy15
   password: 5409bf78-b122-4b9b-9050-da36576f5bbc
   port: 25991
   server: tg_mfbpn03.52cloud.us.kg
   skip-cert-verify: true
   type: ss
   udp: true
+- delay: 1216
+  name: proxy463
+  network: ws
+  port: 443
+  server: 104.19.42.46
+  servername: lr.ylks.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: lr.ylks.us.kg
+    path: /?ed=2560
