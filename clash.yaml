@@ -36,30 +36,16 @@ proxies:
   udp: true
   uuid: 2d347be7-909b-4410-af92-95a1abf7e531
 - cipher: chacha20-ietf-poly1305
-  name: proxy10
+  name: proxy4
   password: 5409bf78-b122-4b9b-9050-da36576f5bbc
   port: 25991
   server: tg_mfbpn03.52cloud.us.kg
   skip-cert-verify: true
   type: ss
   udp: true
-- name: proxy113
-  network: ws
-  port: 443
-  server: 104.19.37.82
-  servername: cr.ylks.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-  ws-opts:
-    headers:
-      Host: cr.ylks.xyz
-    path: /blue
 - alterId: 0
   cipher: auto
-  name: proxy489
+  name: proxy6
   port: 12939
   server: z2.fragranceninja.com
   servername: z2.fragranceninja.com
@@ -68,17 +54,9 @@ proxies:
   type: vmess
   udp: true
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- cipher: chacha20-ietf-poly1305
-  name: proxy1698
-  password: 644c6bf2-c8d0-4c5b-86e5-a3bddeba6a20
-  port: 34338
-  server: gy.666666222.shop
-  skip-cert-verify: true
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: proxy1728
+  name: proxy8
   network: tcp
   port: 8080
   reality-opts:
@@ -91,3 +69,443 @@ proxies:
   type: vless
   udp: true
   uuid: 0eb11578-0638-4daa-8d9d-a114d9ce102c
+- alterId: 0
+  cipher: auto
+  name: proxy142
+  port: 30251
+  server: hkt2.bika.hk
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+- client-fingerprint: randomized
+  name: proxy453
+  network: ws
+  port: 2087
+  server: www.speedtest.net
+  servername: bPb-WORkEr-PaneL-7V8.pAGES.dEv
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: bPb-WORkEr-PaneL-7V8.pAGES.dEv
+    path: /xj62IUJZxfE1sf2z?ed=2560
+- alterId: 0
+  cipher: auto
+  name: proxy794
+  port: 12960
+  server: z3.fragranceninja.com
+  servername: z3.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: proxy795
+  port: 30251
+  server: 1.65.205.116
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+- alterId: 0
+  cipher: auto
+  name: proxy863
+  network: ws
+  port: 443
+  server: hkcft01.xqc.best
+  servername: dg11u57fpsles.cloudfront.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ca6344db-304e-4534-8c3e-fa972ba19dde
+  ws-opts:
+    headers:
+      Host: dg11u57fpsles.cloudfront.net
+    path: /stream
+- name: proxy957
+  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
+  port: 20101
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: proxy965
+  password: 1e6a236f-98fb-4936-907b-f45fbb316d98
+  port: 45611
+  server: rhsdrhwa.cfprefer1.xyz
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: proxy967
+  password: 1e6a236f-98fb-4936-907b-f45fbb316d98
+  port: 10000
+  server: rhsdrhwa.cfprefer1.xyz
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: proxy968
+  password: 1e6a236f-98fb-4936-907b-f45fbb316d98
+  port: 10001
+  server: rhsdrhwa.cfprefer1.xyz
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: proxy969
+  password: 1e6a236f-98fb-4936-907b-f45fbb316d98
+  port: 10015
+  server: rhsdrhwa.cfprefer1.xyz
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: proxy970
+  password: 1e6a236f-98fb-4936-907b-f45fbb316d98
+  port: 10016
+  server: rhsdrhwa.cfprefer1.xyz
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: proxy971
+  password: 1e6a236f-98fb-4936-907b-f45fbb316d98
+  port: 10017
+  server: rhsdrhwa.cfprefer1.xyz
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: proxy1000
+  password: 1e6a236f-98fb-4936-907b-f45fbb316d98
+  port: 10065
+  server: rhsdrhwa.cfprefer1.xyz
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: proxy1041
+  password: 5409bf78-b122-4b9b-9050-da36576f5bbc
+  port: 34676
+  server: tg_mfbpn03.52cloud.us.kg
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: proxy1522
+  port: 45020
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: proxy1525
+  port: 35601
+  server: 120.232.153.40
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: random
+  name: proxy1789
+  network: ws
+  port: 443
+  server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  servername: subhiddify.mmdv2.host
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 15f34214-d8de-41e9-ba72-93daeafc59ef
+  ws-opts:
+    headers:
+      Host: subhiddify.mmdv2.host
+    path: /?ed=2560
+- name: proxy3066
+  network: ws
+  password: Trevely
+  port: 443
+  server: cf.090227.xyz
+  skip-cert-verify: true
+  sni: trojans.trevely.us.kg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojans.trevely.us.kg
+    path: /?ed=2560
+- name: proxy3068
+  network: ws
+  password: Trevely
+  port: 443
+  server: cmcc.090227.xyz
+  skip-cert-verify: true
+  sni: trojans.trevely.us.kg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojans.trevely.us.kg
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: proxy3354
+  port: 24771
+  server: i.needss.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c4f9ddeb-880f-46d4-beb7-8aec86cf55c4
+- alterId: 0
+  cipher: auto
+  name: proxy3362
+  port: 45050
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fc07e7db-7ef5-4080-a1c0-999b108933c5
+- cipher: chacha20-ietf-poly1305
+  name: proxy3374
+  password: 644c6bf2-c8d0-4c5b-86e5-a3bddeba6a20
+  port: 20052
+  server: gy.666666222.shop
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- name: proxy3606
+  network: ws
+  port: 443
+  server: 104.19.35.123
+  servername: dr.ylks.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+  ws-opts:
+    headers:
+      Host: dr.ylks.xyz
+    path: /freecodes
+- alterId: 2
+  cipher: auto
+  name: proxy3781
+  network: ws
+  port: 80
+  server: 1c6bd1c9-salr40-sdxdlm-2t4g.hkt.gotochinatown.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9cee4016-cde0-11eb-a0fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: proxy3782
+  network: ws
+  port: 80
+  server: f357989d-salr40-sdxdlm-2t4g.hkt.comefromchinatown.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9cee4016-cde0-11eb-a0fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: www.hgcbroadband.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: proxy3783
+  network: ws
+  port: 80
+  server: 13e1678c-salr40-sdxdlm-2t4g.hgc1.tcpbbr.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9cee4016-cde0-11eb-a0fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 13e1678c-salr40-sdxdlm-2t4g.hgc1.tcpbbr.net
+    path: /
+- client-fingerprint: random
+  name: proxy3803
+  network: ws
+  port: 443
+  server: 104.17.161.58
+  servername: let.2024911.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c13bba74-d4b7-43cb-a03d-7d7164f85f8f
+  ws-opts:
+    headers:
+      Host: let.2024911.xyz
+    path: /?proxyip=proxyip.oracle.fxxk.dedyn.io
+- client-fingerprint: random
+  name: proxy3808
+  network: ws
+  port: 443
+  server: 104.17.191.229
+  servername: let.2024911.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c13bba74-d4b7-43cb-a03d-7d7164f85f8f
+  ws-opts:
+    headers:
+      Host: let.2024911.xyz
+    path: /?proxyip=proxyip.oracle.fxxk.dedyn.io
+- client-fingerprint: random
+  name: proxy3813
+  network: ws
+  port: 443
+  server: 104.16.200.215
+  servername: let.2024911.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c13bba74-d4b7-43cb-a03d-7d7164f85f8f
+  ws-opts:
+    headers:
+      Host: let.2024911.xyz
+    path: /?proxyip=proxyip.oracle.fxxk.dedyn.io
+- client-fingerprint: random
+  name: proxy3814
+  network: ws
+  port: 443
+  server: 104.17.173.230
+  servername: let.2024911.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c13bba74-d4b7-43cb-a03d-7d7164f85f8f
+  ws-opts:
+    headers:
+      Host: let.2024911.xyz
+    path: /?proxyip=proxyip.oracle.fxxk.dedyn.io
+- client-fingerprint: random
+  name: proxy3815
+  network: ws
+  port: 443
+  server: 104.16.153.65
+  servername: let.2024911.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c13bba74-d4b7-43cb-a03d-7d7164f85f8f
+  ws-opts:
+    headers:
+      Host: let.2024911.xyz
+    path: /?proxyip=proxyip.oracle.fxxk.dedyn.io
+- client-fingerprint: random
+  name: proxy3818
+  network: ws
+  port: 443
+  server: 104.17.170.83
+  servername: let.2024911.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c13bba74-d4b7-43cb-a03d-7d7164f85f8f
+  ws-opts:
+    headers:
+      Host: let.2024911.xyz
+    path: /?proxyip=proxyip.oracle.fxxk.dedyn.io
+- name: proxy4019
+  password: test.+
+  port: 30443
+  server: cthka.ssv.vc
+  skip-cert-verify: true
+  sni: cthka.ssv.vc
+  tls: true
+  type: http
+  udp: true
+  username: test
+- name: proxy4021
+  password: test.+
+  port: 30443
+  server: cthkb.ssv.vc
+  skip-cert-verify: true
+  sni: cthkb.ssv.vc
+  tls: true
+  type: http
+  udp: true
+  username: test
+- name: proxy4043
+  password: test.+
+  port: 30443
+  server: cuhka.ssv.vc
+  skip-cert-verify: true
+  sni: cuhka.ssv.vc
+  tls: true
+  type: http
+  udp: true
+  username: test
+- name: proxy4045
+  password: test.+
+  port: 30443
+  server: cuhkb.ssv.vc
+  skip-cert-verify: true
+  sni: cuhkb.ssv.vc
+  tls: true
+  type: http
+  udp: true
+  username: test
+- name: proxy4063
+  password: test.+
+  port: 30443
+  server: cmhka.ssv.vc
+  skip-cert-verify: true
+  sni: cmhka.ssv.vc
+  tls: true
+  type: http
+  udp: true
+  username: test
+- name: proxy4065
+  password: test.+
+  port: 30443
+  server: cmhkb.ssv.vc
+  skip-cert-verify: true
+  sni: cmhkb.ssv.vc
+  tls: true
+  type: http
+  udp: true
+  username: test
+proxy-groups: []
