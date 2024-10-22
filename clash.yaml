@@ -508,4 +508,3 @@ proxies:
   type: http
   udp: true
   username: test
-proxy-groups: []
