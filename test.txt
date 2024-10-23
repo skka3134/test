@@ -86,4 +86,3 @@ vless://d342d11e-d424-4583-b36e-524ab1f0afa4@138.2.27.42:443?encryption=none&sec
 vless://d342d11e-d424-4583-b36e-524ab1f0afa4@43.153.103.203:443?encryption=none&security=tls&sni=edgood.889876.xyz&fp=ios&type=ws&host=edgood.889876.xyz&path=%2F%3Fed%3D2048#US-SantaClara400
 vless://d342d11e-d424-4583-b36e-524ab1f0afa4@144.24.169.81:8443?encryption=none&security=tls&sni=edgood.889876.xyz&fp=ios&type=ws&host=edgood.889876.xyz&path=%2F%3Fed%3D2048#84430
 vless://d342d11e-d424-4583-b36e-524ab1f0afa4@141.147.16.152:8443?encryption=none&security=tls&sni=edgood.889876.xyz&fp=ios&type=ws&host=edgood.889876.xyz&path=%2F%3Fed%3D2048#84430-1
-vless://d342d11e-d424-4583-b36e-524ab1f0afa4@141.147.61.116:443?encryption=none&security=tls&sni=edgood.889876.xyz&fp=ios&type=ws&host=edgood.889876.xyz&path=%2F%3Fed%3D2048#4430
