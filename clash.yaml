@@ -10258,21 +10258,10 @@ proxies:
   type: vmess
   udp: true
   uuid: 548ff3c1-d8c8-3110-a65a-fb55573380c7
-- alterId: 0
-  cipher: auto
-  name: proxy1021
-  port: 35089
-  server: tanz-board.01byx31qzn.download
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 548ff3c1-d8c8-3110-a65a-fb55573380c7
 - cipher: aes-256-cfb
   name: proxy1022
   password: nekocandy96
   plugin: obfs
-  plugin-opts: {}
   port: 8080
   server: nekocandy96.telegram.org
   skip-cert-verify: true
